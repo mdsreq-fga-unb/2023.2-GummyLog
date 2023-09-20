@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: "Gummy's Store",
   tagline: 'Gummy Bears and stuff',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/faviconGummy.ico',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-test-site.com',
@@ -61,7 +61,7 @@ const config = {
         title: "Gummy's Store",
         logo: {
           alt: 'Gummy bears and stuff',
-          src: 'img/logo.svg',
+          src: 'img/gummyIcon.png',
         },
         items: [
           {
