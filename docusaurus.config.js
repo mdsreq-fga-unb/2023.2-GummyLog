@@ -11,16 +11,17 @@ const config = {
   favicon: 'img/faviconGummy.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://www.github.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
-
+  baseUrl: '/2023.2-GummyLog/',
+  trailingSlash: false,
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'FGA', // Usually your GitHub org/user name.
-  projectName: 'gummys-store', // Usually your repo name.
-
+  organizationName: 'mdsreq-fga-unb', // Usually your GitHub org/user name.
+  projectName: '2023.2-GummyLog', // Usually your repo name.
+  deploymentBranch: "gh-pages",
+  
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
