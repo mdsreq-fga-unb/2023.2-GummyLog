@@ -18,7 +18,7 @@ sidebar_position: 1
 | Padrões de Codificação   | Planning        | Ajudará a ter um codigo mais simples e legível, para que se facilite aos membros da equipe entender que faz cada parte do codigo.  |
 | Design Simples   | Todas as fases        | Vai ajudar a evitar que o código seja demasiado complicado para garantir que este corre rapidamente. |
 | Refatoração   | Review        | Além de ajudar a manter o código limpo, este é um requisito de muitas das práticas XP que vamos usar. |
-| Jogo do Planejamento   | Não será usado        | Isto NÃO será usado já que o tempo com o cliente é limitado e consideramos que o jogo de planejamento leva muito tempo o que pode afetar negativamente a produtividade das reuniões. |
+| Jogo do Planejamento   | Não será usado        | Isto não será usado já que o tempo com o cliente é limitado e consideramos que o jogo de planejamento leva muito tempo o que pode afetar negativamente a produtividade das reuniões. |
 | Ciclo semanal   | Não será usado        | Consideramos que os membros desta equipa não têm tempo suficiente para completar um ciclo de desenvolvimento em apenas uma semana. |
 | Cliente presente   | Não será usado        | A disponibilidade do cliente não permite que esta prática seja aplicada. |
 | Ritmo sustentável   | Não será usado        | Devido a outras responsabilidades relacionadas com a universidade e as vidas pessoais dos membros da equipe não acreditamos que seja possível trabalhar 40 horas semanais. |
