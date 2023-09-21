@@ -6,7 +6,7 @@ sidebar_position: 1
 
 # Praticas XP a ser utilizadas
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+| Práticas XP      | Cerimônias Scrum | Justificativa |
+| ----------- | ----------- |-----------|
+| Header      | Title       | Teste |
+| Paragraph   | Text        | Teste |
