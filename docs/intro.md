@@ -13,6 +13,12 @@ Documentação e software em desenvolvimento
 
 :::
 
+## Histórico de versão 
+
+| Data | Versão | Descrição | Autor |
+|------|--------|-----------|-------|
+| 21/09/2023 | 0.1 | Criação e deploy da primeira versão da documentação com informações sobre nosso produto e estratégias de desenvolvimento | Adriano Fonseca |
+
 ## Equipe
 
 | Papel | Atribuições | Responsável | Participantes |
