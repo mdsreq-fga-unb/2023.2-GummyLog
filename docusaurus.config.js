@@ -15,13 +15,12 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/2023.2-GummyLog/',
-  trailingSlash: false,
+
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'mdsreq-fga-unb', // Usually your GitHub org/user name.
   projectName: '2023.2-GummyLog', // Usually your repo name.
-  deploymentBranch: "gh-pages",
-  
+  deploymentBranch: "Release/Unidade1",
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
