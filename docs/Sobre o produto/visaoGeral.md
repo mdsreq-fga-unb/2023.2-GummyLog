@@ -49,6 +49,7 @@ Tendo um gerenciamento logístico simplificado eles poderão focar no que fará 
 |**Que** |Facilita as operações de adição, eliminação e atualização dos produtos em estoque; permite adicionar, atualizar e revisar o estado de encomenda; permite saber quem são clientes recorrentes |
 |**Ao contrário** |Softwares de armazenamento de dados como excel e Google Spreadsheets |
 |**Nosso Produto** |Está melhor organizado e pode executar as tarefas de atualização de forma automática |
+|**Categoria do produto** |Aplicaçao web |
 
 <br/>
 
