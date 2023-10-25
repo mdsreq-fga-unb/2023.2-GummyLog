@@ -44,11 +44,11 @@ Tendo um gerenciamento logístico simplificado eles poderão focar no que fará 
 
 |          |          |
 |--------- |--------- |
-| **Para** |Possui problemas de logística |
+| **Para** |Suporte de logística e estoque |
 |**O (nome do produto)** |GummyLog |
-|**Que** |Facilita as operações logísticas|
-|**Ao contrário** |Marketplaces |
-|**Nosso Produto** |Não realiza vendas, mas foca em um serviço logístico organizado e rápido |
+|**Que** |Facilita as operações de adição, eliminação e atualização dos produtos em estoque; permite adicionar, atualizar e revisar o estado de encomenda; permite saber quem são clientes recorrentes |
+|**Ao contrário** |Softwares de armazenamento de dados como excel e Google Spreadsheets |
+|**Nosso Produto** |Está melhor organizado e pode executar as tarefas de atualização de forma automática |
 
 <br/>
 
