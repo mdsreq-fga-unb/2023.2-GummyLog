@@ -1,7 +1,7 @@
 ## Mudanças
 
 ## Issue
-N/A
+
 ## Checklist antes de enviar PR
 - [ ] Fiz uma revisão do meu código
 - [ ] Se for uma feature com código, realizei os testes necessários
