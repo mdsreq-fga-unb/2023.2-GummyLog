@@ -35,4 +35,9 @@ sidebar_position: 2
 | Jogo do Planejamento   | Não será usado        | Isto não será usado já que o tempo com o cliente é limitado e consideramos que o jogo de planejamento leva muito tempo o que pode afetar negativamente a produtividade das reuniões. |
 | Ciclo semanal   | Não será usado        | Consideramos que os membros desta equipa não têm tempo suficiente para completar um ciclo de desenvolvimento em apenas uma semana. |
 | Cliente presente   | Não será usado        | A disponibilidade do cliente não permite que esta prática seja aplicada. |
-| Ritmo sustentável   | Não será usado        | Devido a outras responsabilidades relacionadas com a universidade e as vidas pessoais dos membros da equipe não acreditamos que seja possível trabalhar 40 horas semanais. |
+| Ritmo sustentável   | Não será usado        | Devido à imprevisibilidade das atividades semanais correspondentes a outros cursos, consideramos que é impossível ter um número de horas fixas por semana.|
+
+## Referências bibliográficas
+
+- O Guia do Scrum - Ken Schwaber e Jeff Sutherland
+- Extreme Programming Explained: Embrace Change -  Kent Beck e Cynthia Andres

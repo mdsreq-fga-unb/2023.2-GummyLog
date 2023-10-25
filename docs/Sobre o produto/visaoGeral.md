@@ -13,7 +13,7 @@ O proprietário da loja Gummy's Store relata que não consegue expandir seu neg�
 <br/>
 
 
-![](../../static/img/fishbones.png)
+![](../../static/img/fishbones2.png)
 
 <br/>
 
@@ -44,11 +44,11 @@ Tendo um gerenciamento logístico simplificado eles poderão focar no que fará 
 
 |          |          |
 |--------- |--------- |
-| **Para** |Possui problemas de logística |
+| **Para** |Suporte de logística e estoque |
 |**O (nome do produto)** |GummyLog |
-|**Que** |Facilita as operações logísticas|
-|**Ao contrário** |Marketplaces |
-|**Nosso Produto** |Não realiza vendas, mas foca em um serviço logístico organizado e rápido |
+|**Que** |É uma aplicaçao web que facilita as operações de adição, eliminação e atualização dos produtos em estoque; permite adicionar, atualizar e revisar o estado de encomenda |
+|**Ao contrário** |Softwares de armazenamento de dados como excel e Google Spreadsheets |
+|**Nosso Produto** |Está melhor organizado e pode executar as tarefas de atualização de forma automática sem a necessidade de estudar VBA ou JS com o Google apps |
 
 <br/>
 
@@ -56,16 +56,33 @@ Tendo um gerenciamento logístico simplificado eles poderão focar no que fará 
 
 **Objetivo geral**
 
-Melhorar a logística da Gummy's Store e, por consequência, seu desempenho comercial
+Melhorar a logística da Gummy's Store, otimizando o tempo gasto nas tarefas de distribuição, armazenamento de produtos e organização de pedidos, para aumentar a eficiência operacional.
 
 **Objetivos específicos**
 
-* **Organizar os produtos disponíveis:** atualmente o controle dos produtos, os quais estão distribuídos em dois estoques, é feito por meio de uma planilha. Nosso objetivo é dar ao cliente uma maneira melhor de controlar a movimentação de seus produtos a fim de diminuir possíveis equívocos na manipulação de seus documentos de controle de mercadorias. 
+* **Organizar os produtos disponíveis:** dar ao cliente uma maneira de controlar a movimentação de seus produtos atendendo as características particulares de seu negócio.
 
-* **Melhorar a entrega:** hoje, o processo de entrega é feito pelos próprios sócios do negócio, dependendo inteiramente de sua disponibilidade. Um dos objetivos é melhorar a distribuição dessas mercadorias dentre os estoques ao avaliar a proximidade desses em relação com cada ponto de entrega, bem como sugerir a modalidade de entrega ótima para cada caso.
+* **Melhorar a entrega:** melhorar a distribuição de mercadorias dentre os dois estoques disponíveis.
 
-* **Melhorar reabastecimento:** outro objetivo é proporcionar uma maneira estratégica de abastecimento do estoque. Hoje, ele é feito sem um método específico e considerando apenas variáveis superficiais como a disponibilidade de compra nos fornecedores, o que equivale a uma perda de potencial de vendas.
+* **Melhorar reabastecimento:** proporcionar uma maneira baseada em métricas tangíveis para auxiliar o reabastecimento do estoque.
 
-* **Permitir o foco em outras áreas:** também temos como objetivo possibilitar ao nosso cliente focar em outras partes do funil de vendas ao automatizar os processos de controle de estoque, reabastecimento e entrega. Assim, será possível que áreas tão importantes para o negócio, como o marketing e o pós-vendas, sejam aprimoradas.
+* **Permitir o foco em outras áreas:** possibilitar ao nosso cliente focar em outras partes do funil de vendas, como o marketing.
 
 ![Funil de vendas](../../static/img/funil_de_vendas.png)
+
+# **1.4 Tecnologias a Serem Utilizadas**
+
+| Tecnologia  | Descrição | Documentação |
+| ------------- | ------------- | ---------- |
+| React  |  biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.  | https://react.dev/ |
+| Node  | ambiente de execução JavaScript. Com ele, o usuário pode criar aplicações sem depender do browser para isso. | https://nodejs.org/ |
+| Express  | framework para Node.js que fornece recursos mínimos para construção de servidores web.   | https://expressjs.com/ |
+| Javascript  | linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.  | https://developer.mozilla.org/pt-BR/docs/Web/JavaScript |
+| PostgreSQL  | gerenciador de banco de dados objeto relacional | https://www.postgresql.org/docs/ |
+| RabbitMQ  | software de mensagens com código aberto  | https://www.rabbitmq.com/documentation.html |
+
+
+## Referências bibliográficas
+
+- Lean Inception: Como alinhar pessoas e construir o produto certo, Paulo Caroli
+- The Sales Funnel Book: How To Multiply Your Business With Marketing Automation, Nathan Williams

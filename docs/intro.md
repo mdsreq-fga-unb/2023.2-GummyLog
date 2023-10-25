@@ -23,11 +23,11 @@ Documentação e software em desenvolvimento
 
 | Papel | Atribuições | Responsável | Participantes |
 |-------|-------------|-------------|---------------|
-|Dev back-end | Codificar o back end, adicionando end-points para cumprir as regras de negócio | Adriano fonseca | João Vitor Lopes |
-| Dev front-end | Codificar o lado do cliente em nossa aplicação para a visualização de dados e cumprimento das regras de negócio  | Hauedy Wegener | Adriano Fonseca |
-Dev back-end | Codificar o back end, adicionando end-points para cumprir as regras de negócio | João Vitor Lopes | Adriano Fonseca |
+|Dev back-end | Codificar o back end, adicionando end-points para cumprir as regras de negócio | Adriano fonseca | Todos |
+| Dev front-end | Codificar o lado do cliente em nossa aplicação para a visualização de dados e cumprimento das regras de negócio  | Hauedy Wegener | Todos |
+Dev back-end | Codificar o back end, adicionando end-points para cumprir as regras de negócio | João Vitor Lopes | Todos |  
 Dev Master | Gerenciamento de desenvolvimento do produto e comunicação com cliente | Sebastián Héctor | Todos |
-| Dev CI-test | Definição e manutenção da estrutura de lançamentos e assegurar a qualidade do código por meio de testes automatizados | Necivaldo Amaral | Adriano Fonseca |
+| Dev CI-test | Definição e manutenção da estrutura de lançamentos e assegurar a qualidade do código por meio de testes automatizados | Necivaldo Amaral | Todos |
 
 
 ## Matriz de comunicação
@@ -37,13 +37,31 @@ Dev Master | Gerenciamento de desenvolvimento do produto e comunicação com cli
 | Acompanhamentos das atividades | Equipe de desenvolvimento | 2 vezes por semana | Ata de reunião |
 |  Avaliação do andamento do projeto com cliente | Equipe de desenvolvimento e cliente | 1 vez por semana | Ata de reunião |
 | Acompanhamento de riscos e indicadores | Equipe de desenvolvimento | 1 vez por semana | Ata de reunião com relatório |
+| Acompahamento e apresentações em aula | Equipe de desenvolvimento e professor da disciplina | Até 2 vezes por semana | A depender do feedback
+| Acompanhamento do projeto pela monitora | Equipe de desenvovimento e monitora da equipe | Ao menos uma vez por semana | A depender do feedback
+
+### Indicadores de risco
+
+* Calendário da disciplina
+* Backlog de produto
+* Grau de ocupação dos integrantes da equipe de desenvolvimento, este que estará indicado em uma tabela em um software de planilhas
 
 ## Planejamento das Sprints
 
 |Sprint|Produto(entrega)|Data Início|Data Fim|
 |-------------|---------|----------|----------|
-|**Sprint 1** |Definição do Produto, organização do projeot e processos de desenvolvimento|17/09/2023|21/09/2023|
-|**Sprint 2** |Definição de MVP|24/09/2023|08/10/2023|
+|**Sprint 1** | Definição do Produto, organização do projeto e processos de desenvolvimento | 17/09/2023 | 21/09/2023 | 
+|**Sprint 2** | Definição de MVP | 24/09/2023 | 26/10/2023 |
+|**Sprint 3** | MVP 1 | 30/10/2023 | 19/11/2023 |
+|**Sprint 4** | Sprint dedicada a spikes | 20/11/2023 | 22/11/2023 |
+|**Sprint 5** | MVP 2 | 24/11/2023 | 10/12/2023 |
+|**Sprint 6** | Sprint dedicada à revisão geral do projeto | 11/12/2023 | 13/12/2023 |
+
+:::Note Nota
+
+As sprints são planejadas para durar duas semanas, entretando, para adequar ao cronograma da dsiciplina, teremos excessões com sprints de apenas uma semana.
+
+:::
 
 ## Gerenciamento de Riscos
 
@@ -71,3 +89,7 @@ Dev Master | Gerenciamento de desenvolvimento do produto e comunicação com cli
 | Escopo inicial do projeto foi maior do que a capacidade da equipe | Revisamos nossos objetivos e difinimos um escopo factível e bem delimitado | Criar visão do produto e compreender nosso ponto de atuação|
 |  Falta de conhecimento técnico na equipe dificultou a inserção da nossa documentação no Github Pages | Realização de Software Dojo sobre Docusaurus e Markdown | Criação de documentação utilizando o docusaurus |
 | Dificuldades ao realizar o deploy | Pair Programing utilizando a documentação do docusaurus como apoio e realização do deploy | Deploy da documentação |
+
+## Referências bibliográficas
+
+- Lean Inception: Como alinhar pessoas e construir o produto certo, Paulo Caroli
