@@ -23,11 +23,11 @@ Documentação e software em desenvolvimento
 
 | Papel | Atribuições | Responsável | Participantes |
 |-------|-------------|-------------|---------------|
-|Dev back-end | Codificar o back end, adicionando end-points para cumprir as regras de negócio | Adriano fonseca | João Vitor Lopes |
-| Dev front-end | Codificar o lado do cliente em nossa aplicação para a visualização de dados e cumprimento das regras de negócio  | Hauedy Wegener | Adriano Fonseca |
-Dev back-end | Codificar o back end, adicionando end-points para cumprir as regras de negócio | João Vitor Lopes | Adriano Fonseca |
+|Dev back-end | Codificar o back end, adicionando end-points para cumprir as regras de negócio | Adriano fonseca | Todos |
+| Dev front-end | Codificar o lado do cliente em nossa aplicação para a visualização de dados e cumprimento das regras de negócio  | Hauedy Wegener | Todos |
+Dev back-end | Codificar o back end, adicionando end-points para cumprir as regras de negócio | João Vitor Lopes | Todos |  
 Dev Master | Gerenciamento de desenvolvimento do produto e comunicação com cliente | Sebastián Héctor | Todos |
-| Dev CI-test | Definição e manutenção da estrutura de lançamentos e assegurar a qualidade do código por meio de testes automatizados | Necivaldo Amaral | Adriano Fonseca |
+| Dev CI-test | Definição e manutenção da estrutura de lançamentos e assegurar a qualidade do código por meio de testes automatizados | Necivaldo Amaral | Todos |
 
 
 ## Matriz de comunicação
