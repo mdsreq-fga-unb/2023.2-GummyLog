@@ -57,7 +57,7 @@ Dev Master | Gerenciamento de desenvolvimento do produto e comunicação com cli
 |**Sprint 5** | MVP 2 | 24/11/2023 | 10/12/2023 |
 |**Sprint 6** | Sprint dedicada à revisão geral do projeto | 11/12/2023 | 13/12/2023 |
 
-:::Note Nota
+:::note Nota
 
 As sprints são planejadas para durar duas semanas, entretando, para adequar ao cronograma da dsiciplina, teremos excessões com sprints de apenas uma semana.
 
