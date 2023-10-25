@@ -50,8 +50,18 @@ Dev Master | Gerenciamento de desenvolvimento do produto e comunicação com cli
 
 |Sprint|Produto(entrega)|Data Início|Data Fim|
 |-------------|---------|----------|----------|
-|**Sprint 1** |Definição do Produto, organização do projeot e processos de desenvolvimento|17/09/2023|21/09/2023|
-|**Sprint 2** |Definição de MVP|24/09/2023|08/10/2023|
+|**Sprint 1** | Definição do Produto, organização do projeto e processos de desenvolvimento | 17/09/2023 | 21/09/2023 | 
+|**Sprint 2** | Definição de MVP | 24/09/2023 | 26/10/2023 |
+|**Sprint 3** | MVP 1 | 30/10/2023 | 19/11/2023 |
+|**Sprint 4** | Sprint dedicada a spikes | 20/11/2023 | 22/11/2023 |
+|**Sprint 5** | MVP 2 | 24/11/2023 | 10/12/2023 |
+|**Sprint 6** | Sprint dedicada à revisão geral do projeto | 11/12/2023 | 13/12/2023 |
+
+:::Note Nota
+
+As sprints são planejadas para durar duas semanas, entretando, para adequar ao cronograma da dsiciplina, teremos excessões com sprints de apenas uma semana.
+
+:::
 
 ## Gerenciamento de Riscos
 
