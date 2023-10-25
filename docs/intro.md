@@ -37,6 +37,14 @@ Dev Master | Gerenciamento de desenvolvimento do produto e comunicação com cli
 | Acompanhamentos das atividades | Equipe de desenvolvimento | 2 vezes por semana | Ata de reunião |
 |  Avaliação do andamento do projeto com cliente | Equipe de desenvolvimento e cliente | 1 vez por semana | Ata de reunião |
 | Acompanhamento de riscos e indicadores | Equipe de desenvolvimento | 1 vez por semana | Ata de reunião com relatório |
+| Acompahamento e apresentações em aula | Equipe de desenvolvimento e professor da disciplina | Até 2 vezes por semana | A depender do feedback
+| Acompanhamento do projeto pela monitora | Equipe de desenvovimento e monitora da equipe | Ao menos uma vez por semana | A depender do feedback
+
+### Indicadores de risco
+
+* Calendário da disciplina
+* Backlog de produto
+* Grau de ocupação dos integrantes da equipe de desenvolvimento, este que estará indicado em uma tabela em um software de planilhas
 
 ## Planejamento das Sprints
 
