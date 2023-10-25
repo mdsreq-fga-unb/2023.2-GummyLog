@@ -48,7 +48,7 @@ Tendo um gerenciamento logístico simplificado eles poderão focar no que fará 
 |**O (nome do produto)** |GummyLog |
 |**Que** |Facilita as operações de adição, eliminação e atualização dos produtos em estoque; permite adicionar, atualizar e revisar o estado de encomenda |
 |**Ao contrário** |Softwares de armazenamento de dados como excel e Google Spreadsheets |
-|**Nosso Produto** |Está melhor organizado e pode executar as tarefas de atualização de forma automática |
+|**Nosso Produto** |Está melhor organizado e pode executar as tarefas de atualização de forma automática sem a necessidade de estudar VBA ou JS com o Google apps |
 
 <br/>
 
