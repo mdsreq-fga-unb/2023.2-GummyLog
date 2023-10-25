@@ -70,6 +70,18 @@ Melhorar a logística da Gummy's Store, otimizando o tempo gasto nas tarefas de 
 
 ![Funil de vendas](../../static/img/funil_de_vendas.png)
 
+# **1.4 Tecnologias a Serem Utilizadas**
+
+| Tecnologia  | Descrição | Documentação |
+| ------------- | ------------- | ---------- |
+| React  |  biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.  | https://react.dev/ |
+| Node  | ambiente de execução JavaScript. Com ele, o usuário pode criar aplicações sem depender do browser para isso. | https://nodejs.org/ |
+| Express  | framework para Node.js que fornece recursos mínimos para construção de servidores web.   | https://expressjs.com/ |
+| Javascript  | linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.  | https://developer.mozilla.org/pt-BR/docs/Web/JavaScript |
+| PostgreSQL  | gerenciador de banco de dados objeto relacional | https://www.postgresql.org/docs/ |
+| RabbitMQ  | software de mensagens com código aberto  | https://www.rabbitmq.com/documentation.html |
+
+
 ## Referências bibliográficas
 
 - Lean Inception: Como alinhar pessoas e construir o produto certo, Paulo Caroli
