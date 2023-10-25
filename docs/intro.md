@@ -71,3 +71,7 @@ Dev Master | Gerenciamento de desenvolvimento do produto e comunicação com cli
 | Escopo inicial do projeto foi maior do que a capacidade da equipe | Revisamos nossos objetivos e difinimos um escopo factível e bem delimitado | Criar visão do produto e compreender nosso ponto de atuação|
 |  Falta de conhecimento técnico na equipe dificultou a inserção da nossa documentação no Github Pages | Realização de Software Dojo sobre Docusaurus e Markdown | Criação de documentação utilizando o docusaurus |
 | Dificuldades ao realizar o deploy | Pair Programing utilizando a documentação do docusaurus como apoio e realização do deploy | Deploy da documentação |
+
+## Referências bibliográficas
+
+- Lean Inception: Como alinhar pessoas e construir o produto certo, Paulo Caroli

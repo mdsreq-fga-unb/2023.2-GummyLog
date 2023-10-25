@@ -36,3 +36,8 @@ sidebar_position: 2
 | Ciclo semanal   | Não será usado        | Consideramos que os membros desta equipa não têm tempo suficiente para completar um ciclo de desenvolvimento em apenas uma semana. |
 | Cliente presente   | Não será usado        | A disponibilidade do cliente não permite que esta prática seja aplicada. |
 | Ritmo sustentável   | Não será usado        | Devido a outras responsabilidades relacionadas com a universidade e as vidas pessoais dos membros da equipe não acreditamos que seja possível trabalhar 40 horas semanais. |
+
+## Referências bibliográficas
+
+- O Guia do Scrum - Ken Schwaber e Jeff Sutherland
+- Extreme Programming Explained: Embrace Change -  Kent Beck e Cynthia Andres
