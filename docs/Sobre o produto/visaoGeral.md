@@ -69,3 +69,8 @@ Melhorar a logística da Gummy's Store e, por consequência, seu desempenho come
 * **Permitir o foco em outras áreas:** também temos como objetivo possibilitar ao nosso cliente focar em outras partes do funil de vendas ao automatizar os processos de controle de estoque, reabastecimento e entrega. Assim, será possível que áreas tão importantes para o negócio, como o marketing e o pós-vendas, sejam aprimoradas.
 
 ![Funil de vendas](../../static/img/funil_de_vendas.png)
+
+## Referências bibliográficas
+
+- Lean Inception: Como alinhar pessoas e construir o produto certo, Paulo Caroli
+- The Sales Funnel Book: How To Multiply Your Business With Marketing Automation, Nathan Williams
