@@ -73,3 +73,4 @@ Melhorar a logística da Gummy's Store e, por consequência, seu desempenho come
 ## Referências bibliográficas
 
 - Lean Inception: Como alinhar pessoas e construir o produto certo, Paulo Caroli
+- The Sales Funnel Book: How To Multiply Your Business With Marketing Automation, Nathan Williams
