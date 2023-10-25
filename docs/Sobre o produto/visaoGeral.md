@@ -56,7 +56,7 @@ Tendo um gerenciamento logístico simplificado eles poderão focar no que fará 
 
 **Objetivo geral**
 
-Melhorar a logística da Gummy's Store e, por consequência, seu desempenho comercial
+Melhorar a logística da Gummy's Store, otimizando o tempo gasto nas tarefas de distribuição, armazenamento de produtos e organização de pedidos, para aumentar a eficiência operacional.
 
 **Objetivos específicos**
 
