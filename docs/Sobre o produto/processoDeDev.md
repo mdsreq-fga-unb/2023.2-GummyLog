@@ -37,7 +37,38 @@ sidebar_position: 2
 | Cliente presente   | Não será usado        | A disponibilidade do cliente não permite que esta prática seja aplicada. |
 | Ritmo sustentável   | Não será usado        | Devido à imprevisibilidade das atividades semanais correspondentes a outros cursos, consideramos que é impossível ter um número de horas fixas por semana.|
 
+# Padrões de UI
+
+**Padrões e princípios**
+
+* Utilização da identidade visual do negócio na interface: familiaridade do usuário.
+
+* Uso de um padrão de cores em relação a notificações e warnings: aprendizagem, familiaridade do usuário, consistência, surpresa mínima e recuperabilidade.
+
+* Uso de perguntas de confirmação para o usuário em determinadas ações: aprendizagem, consistência, surpresa mínima.
+
+* A língua nativa dos usuários será a padrão da interface: aprendizagem e familiaridade do usuário.
+
+* Acesso a uma funcionalidade exigirá do usuário até 5 cliques: aprendizagem e consistência.
+
+* Ajuda textual em botões e campos de preenchimento: orientação ao usuário.
+
+**Modalidade das interações**
+
+* Resposta da questão: alteração nas quantidades de produtos, nos status de pedidos, por exemplo.
+
+* Seleção do menu: menus de ações a serem tomadas e/ou informações a serem exibidas.
+
+* Preenchimento de formulário: no cadastro de novos itens, por exemplo.
+
+**Paleta de cores e fonte**
+
+Geral: cinza(201F1F), branco(FFFFFF), tons de lilás(AA67B5, 704577).
+
+Warnings e notificações: vermelho(C53131), laranja(F47933), verde(308E2E).
+
 ## Referências bibliográficas
 
-- O Guia do Scrum - Ken Schwaber e Jeff Sutherland
-- Extreme Programming Explained: Embrace Change -  Kent Beck e Cynthia Andres
+- O Guia do Scrum, Ken Schwaber e Jeff Sutherland
+- Extreme Programming Explained: Embrace Change,  Kent Beck e Cynthia Andres
+- Slides Métodos de Desenvolvimento de Software - Desing de Interface, George Marsicano
