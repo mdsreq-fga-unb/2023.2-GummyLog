@@ -81,6 +81,21 @@ Melhorar a logística da Gummy's Store, otimizando o tempo gasto nas tarefas de 
 | PostgreSQL  | gerenciador de banco de dados objeto relacional | https://www.postgresql.org/docs/ |
 | RabbitMQ  | software de mensagens com código aberto  | https://www.rabbitmq.com/documentation.html |
 
+# Definição de ready e done
+
+**Definição de ready(DOR)** 
+
+- Spikes realizadas, quando necessário, para cumprir os requisitos técnicos da funcionalidade
+- Histórias de usuário refinadas pelo time
+- Atividades que são requisitos para esta finalizadas
+
+**Definição de done(DOD)**
+
+- História de usuário cumprida
+
+- Funcionalidade testada por meio de testes de integração, unitários e, quando necessário, ponta a ponta;
+
+- O código segue as convenções feitas pela equipe e não apresenta erros de liting
 
 ## Referências bibliográficas
 
