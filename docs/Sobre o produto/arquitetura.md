@@ -5,6 +5,14 @@ sidebar_position: 3
 
 # Arquitetura do produto
 
+A arquitetura Cliente-server é composta por dois componentes, o fornecedor, o qual se encarrega de prover os serviços e o consumidor, o qual usa os serviços.
+
+Nesta arquitetura podem existir vários clientes conectados a um único servidor para recuperar os recursos necessários para funcionar.
+
+O cliente neste caso é apenas uma camada para mostrar os dados, é o servidor que faz todas as tarefas pesadas, porém ambas as partes são igualmente importantes, o cliente é completamente inutil se o servidor não estiver disponível e o servidor sozinho não poderia ser usado. 
+
+A arquitetura Client-server no caso do GummyLog funciona da seguinte maneira o usuário, neste caso um membro do GummyStore, realiza um pedido através de uma interface no ReactJS, depois desta interface envia solicitações ao sistema de back-end que usa ExpressJS, este se encarregará de conectar a parte de front-end com o servidor SQL, posteriormente se envia as querendo ao servidor que responde com dados, logo a parte de back-end envia estes dados à parte front-end para que o usuário possa visualizá-los.
+
 ```mermaid
 C4Context
 title Contexto da Arquitetura do MVP1
