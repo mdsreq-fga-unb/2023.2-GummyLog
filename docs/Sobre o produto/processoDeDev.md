@@ -63,9 +63,19 @@ sidebar_position: 2
 
 **Paleta de cores e fonte**
 
-Geral: cinza(201F1F), branco(FFFFFF), tons de lilás(AA67B5, 704577).
+* Geral: cinza(201F1F), branco(FFFFFF), tons de lilás(AA67B5, 704577).
 
-Warnings e notificações: vermelho(C53131), laranja(F47933), verde(308E2E).
+* Warnings e notificações: vermelho(C53131), laranja(F47933), verde(308E2E).
+
+![Tela1](../../static/img/prototipoTela1.png)
+
+![Tela2](../../static/img/prototipoTela2.png)
+
+![Tela5](../../static/img/prototipoTela5.png)
+
+![Tela3](../../static/img/prototipoTela3.png)
+
+![Tela4](../../static/img/prototipoTela4.png)
 
 ## Referências bibliográficas
 
