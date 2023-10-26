@@ -37,6 +37,143 @@ sidebar_position: 2
 | Cliente presente   | Não será usado        | A disponibilidade do cliente não permite que esta prática seja aplicada. |
 | Ritmo sustentável   | Não será usado        | Devido à imprevisibilidade das atividades semanais correspondentes a outros cursos, consideramos que é impossível ter um número de horas fixas por semana.|
 
+## Backlog de Requisitos
+
+## MVP1
+
+### Requisitos Funcionais:
+* Registro de Produtos novos:
+    + US: Eu, como usuário, quero preencher um formulário que irá registrar um novo produto em meu estoque, para poder fazer um melhor controle dos produtos que tenho disponíveis
+        + Valor de negócio: 13
+
+        + Viabilidade: 13
+
+        + Complexidade: 1
+
+        + Média: 9
+
+* Rastreamento de Estoque:
+    + US: Eu, como usuário, quero visualizar o estoque de produtos com informações de quantidade e localização do produto para ter noção do que tenho disponível para vender.
+        + Valor de negócio: 13
+
+        + Viabilidade: 8
+
+        + Complexidade: 3
+
+        + Média: 8
+
+* Recuperação de senha por e-mail:
+    + US: Eu, como usuário, quero recuperar minha conta por e-mail para não perder acesso aos meus dados do GummyLog.
+        + Valor de negócio: 8
+
+        + Viabilidade: 8
+
+        + Complexidade: 5
+
+        + Média: 7
+
+
+* Inserção de um produto já existente no estoque:
+    + US: Eu, como usuário, quero inserir uma nova quantidade em um produto já existe no estoque a fim de manter o histórico de um produto que já foi cadastrado anteriormente e ter uma noção de como meu estoque realmente está.
+        + Valor de negócio: 8
+
+        + Viabilidade: 8
+
+        + Complexidade: 3
+
+        + Média: 6,333
+
+
+* Notificações de Estoque Baixo:
+    + US: Eu, como usuário, quero receber notificações dentro da aplicação e por e-mail quando o estoque de um dos meus produtos estiver baixo para que eu não esqueça de reabastecer o estoque desse produto.
+        + Valor de negócio: 3
+
+        + Viabilidade: 8
+
+        + Complexidade: 5
+
+        + Média: 5.3333
+
+* Autenticação de usuário por e-mail:
+    + US: Eu, como usuário, quero realizar autenticação através do endereço de e-mail cadastrado a fim de manter meus dados seguros com minhas credenciais.
+
+* Criação de usuário por e-mail:
+    + US: Eu, como usuário, quero criar uma conta no GummyLog usando meu endereço de e-mail para ter mais controle sobre a minha conta.
+        + Valor de negócio: 3
+
+        + Viabilidade: 2
+
+        + Complexidade: 5
+
+        + Média: 3.333
+
+## MVP2
+
+* Criar uma nova venda relacionando produtos em estoque:
+    + US: Eu, como usuário, quero registrar uma venda para reservar a saída de um produto do meu estoque a fim de não correr o risco de fazer vendas sem o produto em estoque.
+        + Valor de negócio: 8
+
+        + Viabilidade: 8
+
+        + Complexidade: 5
+
+        + Média: 7
+
+* Dashboard com métricas de entrada e saída de produtos:
+    + US: Eu, como usuário, quero visualizar um dashboard com métricas de entrada e saída de produtos a fim de ter uma melhor noção de como meu negócio está se saindo.
+        + Valor de negócio: 8
+
+        + Viabilidade: 3
+
+        + Complexidade: 8
+
+        + Média: 6,33
+
+* Escolher para qual e-mail as notificações serão enviadas:
+    + US: Eu,, como usuário, quero escolher para qual e-mail as notificações serão enviadas a fim de manter as notificações centralizadas em um endereço reservado para essa finalidade.
+        + Valor de negócio: 2
+
+        + Viabilidade: 13
+
+        + Complexidade: 1
+
+        + Média: 5.3333
+
+* Manutenção de status de Pedidos:
+    + US: Eu, como usuário, quero alterar o status dos produtos em estoque a medida que as vendas forem andando para poder ter controle do meu processo de retirada do estoque e entrega para o cliente.
+        + Valor de negócio: 5
+
+        + Viabilidade: 8
+
+        + Complexidade: 2
+
+        + Média: 5
+
+* Sugestão de qual unidade de armazenamento o produto deve ser retirado:
+    + US: Eu, como usuário, quero receber sugestões de qual unidade de armazenamento um produto deve ser retirado para reduzir os custos de uma entrega.
+        + Valor de negócio: 3
+
+        + Viabilidade: 3
+
+        + Complexidade: 8
+
+        + Média: 4.666666
+
+* Criação de usuário por meio de oAuth.
+    + US: Eu, como usuário, quero criar uma conta no GummyLog usando minha conta Google para poupar tempo ao criar a conta.
+        + Valor de negócio: 3
+
+        + Viabilidade: 5
+
+        + Complexidade: 3
+
+        + Média: 3.666666
+
+## Requisitos Não Funcionais:
+* Sempre que um erro não relacionado ao uso da interface pelo usuário ocorrer ele deve ser registrado em um log e notificar a equipe responsável.
+* O usuário deverá realizar qualquer funcionalidade com até 5 cliques.
+* O sistema deve ajustar dinamicamente o layout e o conteúdo para diferentes tamanhos de tela, permitindo uma visualização apropriada em telas pequenas, médias e grandes.
+
 # Padrões de UI
 
 **Padrões e princípios**
@@ -66,6 +203,7 @@ sidebar_position: 2
 Geral: cinza(201F1F), branco(FFFFFF), tons de lilás(AA67B5, 704577).
 
 Warnings e notificações: vermelho(C53131), laranja(F47933), verde(308E2E).
+
 
 ## Referências bibliográficas
 
