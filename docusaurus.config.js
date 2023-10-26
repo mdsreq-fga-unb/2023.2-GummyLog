@@ -6,6 +6,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
   title: "Gummy's Store",
   tagline: 'Gummy Bears and stuff',
   favicon: 'img/faviconGummy.ico',
