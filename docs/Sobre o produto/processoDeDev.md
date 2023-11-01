@@ -39,140 +39,73 @@ sidebar_position: 2
 
 ## Backlog de Requisitos
 
-## MVP1
+### Mapeamento de personas 
+
+| Persona | Descrição |
+| ----------- | ----------- |
+| Usuário | Refere-se aos dois sócios  da Gummy's Store |
 
 ### Requisitos Funcionais:
-* Registro de Produtos novos:
-    + US: Eu, como usuário, quero preencher um formulário que irá registrar um novo produto em meu estoque, para poder fazer um melhor controle dos produtos que tenho disponíveis
-        + Valor de negócio: 13
 
-        + Viabilidade: 13
+| Valor de Fibonacci | Significado                                           |
+|-------------------|------------------------------------------------------|
+| 0                 | Tarefa sem esforço significativo, praticamente concluída.    |
+| 1                 | Tarefa muito pequena, pode ser concluída rapidamente.     |
+| 2                 | Tarefa pequena, requer um esforço mínimo.                 |
+| 3                 | Tarefa de tamanho moderado, levará algum tempo para concluir. |
+| 5                 | Tarefa um pouco maior, levará algum tempo considerável.  |
+| 8                 | Tarefa de tamanho significativo, requer esforço substancial. |
+| 13                | Tarefa grande, complexa e com alta incerteza.              |
 
-        + Complexidade: 1
+| Temas | Épicos | User Story |  Valor de Negocio | Viabilidade | Complexidade |  Média |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | --------|
+| **[TE01]** Gerenciamento de Produtos | **[EP01]** Gestão de Estoque e Inventário| **[US01:]** Eu, como usuário, quero preencher um formulário que irá registrar um novo produto em meu estoque, para poder fazer um melhor controle dos produtos que tenho disponíveis | 13 | 13 | 1 | 9 |
+| **[TE01]** Gerenciamento de Produtos | **[EP01]** Gestão de Estoque e Inventário | **[US02:]** Eu, como usuário, quero visualizar o estoque de produtos com informações de quantidade e localização do produto para ter noção do que tenho disponível para vender. | 13 | 8 | 3 |  8 |
+| **[TE01]** Gerenciamento de Produtos | **[EP03]** Plataforma de logística com acesso restrito | **[US08:]** Eu, como usuário, quero recuperar minha conta por e-mail para não perder acesso aos meus dados do GummyLog. | 8 | 8 | 5 | 7 |
+| **[TE02]**  Otimização Logistica | **[EP02]** Processamento de Pedidos e Entregas | **[US11:]** Eu, como usuário, quero registrar uma venda para reservar a saída de um produto do meu estoque a fim de não correr o risco de fazer vendas sem o produto em estoque.| 8 | 8 |  5 | 7 |
+| **[TE01]** Gerenciamento de Produtos | **[EP01]** Gestão de Estoque e Inventário | **[US10:]** Eu, como usuário, quero inserir uma nova quantidade em um produto já existe no estoque a fim de manter o histórico de um produto que já foi cadastrado anteriormente e ter uma noção de como meu estoque realmente está.| 8 | 8 |  3 | 6.333 |
+| **[TE02]**  Otimização Logistica | **[EP01]** Gestão de Estoque e Inventário | **[US13:]** Eu, como usuário, quero visualizar um dashboard com métricas de entrada e saída de produtos a fim de ter uma melhor noção de como meu negócio está se saindo. | 8 | 3 | 8 | 6.33 |
+| **[TE01]** Gerenciamento de Produtos | **[EP01]** Gestão de Estoque e Inventário | **[US03:]** Eu, como usuário, quero receber notificações dentro da aplicação e por e-mail quando o estoque de um dos meus produtos estiver baixo para que eu não esqueça de reabastecer o estoque desse produto. | 3 | 8 | 5 | 5.333|
+| **[TE02]**  Otimização Logistica | **[EP03]** Plataforma de logística com acesso restrito | **[US14:]** Eu,, como usuário, quero escolher para qual e-mail as notificações serão enviadas a fim de manter as notificações centralizadas em um endereço reservado para essa finalidade. | 2 | 13 | 1 | 5.333| 
+| **[TE02]**  Otimização Logistica |  **[EP02]** Processamento de Pedidos e Entregas | **[US04:]** Eu, como usuário, quero alterar o status dos produtos em estoque a medida que as vendas forem andando para poder ter controle do meu processo de retirada do estoque e entrega para o cliente. | 5 | 8 | 2 | 5 |
+| **[TE02]**  Otimização Logistica |  **[EP02]** Processamento de Pedidos e Entregas | **[US12:]** Eu, como usuário, quero receber sugestões de qual unidade de armazenamento um produto deve ser retirado para reduzir os custos de uma entrega. |  3 | 3 | 8 | 4.66 |
+| **[TE02]**  Otimização Logistica | **[EP03]** Plataforma de logística com acesso restrito | **[US05:]** Eu como usuário quero realizar autenticação através do endereço de e-mail cadastrado a fim de manter meus dados seguros com minhas credenciais.| 3 | 2 | 5 | 3.333|
+| **[TE02]**  Otimização Logistica | **[EP03]** Plataforma de logística com acesso restrito | **[US06:]** Eu como usuário quero criar uma conta no GummyLog usando meu endereço de e-mail para ter mais controle sobre a minha conta.| 3 | 2 | 5 | 3.333|
 
-        + Média: 9
+### Requisitos Não Funcionais
 
-* Rastreamento de Estoque:
-    + US: Eu, como usuário, quero visualizar o estoque de produtos com informações de quantidade e localização do produto para ter noção do que tenho disponível para vender.
-        + Valor de negócio: 13
+| Categoria | Requisito |
+| ----------- | ----------- |
+| **Usabilidade** | **[RNF01]** O sistema deve ajustar dinamicamente o layout e o conteúdo para diferentes tamanhos de tela, permitindo uma visualização apropriada em telas pequenas, médias e grandes. | 
+| **Confiabilidade**|  **[RNF02]** O sistema deve proporcionar um ambiente suficientemente seguro para garantir que apenas aqueles registrados no sistema tenham acesso a ele.|
+| **Interface** | **[RNF03]** O sistema deve conter estilização das páginas com cores, fontes, botões e icones padronizados|
+| **Usabilidade**  | **[RNF04]** O usuário deverá realizar qualquer funcionalidade no sistema com até 5 cliques| 
+| **Confiabilidade**| **[RNF05]** O sistema deve registrar erros não relacionados à interação do usuário em um log e notificar a equipe responsável | 
+| **Suportabilidade** | **[RNF06]** O sistema  deve ser compatível com as versões de até Novembro de 2023 dos navegadores modernos como Chrome, Safari, Edge, Firefox e Opera. |
 
-        + Viabilidade: 8
+## MVPs
 
-        + Complexidade: 3
+### MVP1
 
-        + Média: 8
+| Tema | Épico | User Story |   
+| ----------- | ----------- |----------- |
+|**[TE01]** Gerenciamento de Produtos | **[EP01]** Gestão de Estoque e Inventário | **[US01:]** Eu, como usuário, quero preencher um formulário que irá registrar um novo produto em meu estoque, para poder fazer um melhor controle dos produtos que tenho disponíveis| 
+| **[TE01]** Gerenciamento de Produtos | **[EP01]** Gestão de Estoque e Inventário | **[US02:]** Eu, como usuário, quero visualizar o estoque de produtos com informações de quantidade e localização do produto para ter noção do que tenho disponível para vender. |
+| **[TE01]** Gerenciamento de Produtos | **[EP03]** Plataforma de logística com acesso restrito | **[US08:]**  Eu, como usuário, quero recuperar minha conta por e-mail para não perder acesso aos meus dados do GummyLog. |
+| **[TE01]** Gerenciamento de Produtos | **[EP01]** Gestão de Estoque e Inventário | **[US10:]** Eu, como usuário, quero inserir uma nova quantidade em um produto já existe no estoque a fim de manter o histórico de um produto que já foi cadastrado anteriormente e ter uma noção de como meu estoque realmente está. |
+| **[TE01]** Gerenciamento de Produtos | **[EP01]** Gestão de Estoque e Inventário | **[US03:]** Eu, como usuário, quero receber notificações dentro da aplicação e por e-mail quando o estoque de um dos meus produtos estiver baixo para que eu não esqueça de reabastecer o estoque desse produto. |
 
-* Recuperação de senha por e-mail:
-    + US: Eu, como usuário, quero recuperar minha conta por e-mail para não perder acesso aos meus dados do GummyLog.
-        + Valor de negócio: 8
+###  MVP2
+| Tema | Épico | User Story |   
+| ----------- | ----------- |----------- |
+| **[TE02]** Otimização Logistica |  **[EP02]** Processamento de Pedidos e Entregas | **[US11:]** Eu, como usuário, quero registrar uma venda para reservar a saída de um produto do meu estoque a fim de não correr o risco de fazer vendas sem o produto em estoque.|
+| **[TE02]** Otimização Logistica | **[EP01]** Gestão de Estoque e Inventário | **[US13:]** Eu, como usuário, quero visualizar um dashboard com métricas de entrada e saída de produtos a fim de ter uma melhor noção de como meu negócio está se saindo|
+| **[TE02]**  Otimização Logistica | **[EP03]** Plataforma de logística com acesso restrito | **[US14:]** Eu,, como usuário, quero escolher para qual e-mail as notificações serão enviadas a fim de manter as notificações centralizadas em um endereço reservado para essa finalidade. |
+| **[TE02]**  Otimização Logistica | **[EP02]** Processamento de Pedidos e Entregas | **[US04:]** Eu, como usuário, quero alterar o status dos produtos em estoque a medida que as vendas forem andando para poder ter controle do meu processo de retirada do estoque e entrega para o cliente |
+| **[TE02]**  Otimização Logistica  | **[EP02]** Processamento de Pedidos e Entregas | **[US12:]** Eu, como usuário, quero receber sugestões de qual unidade de armazenamento um produto deve ser retirado para reduzir os custos de uma entrega. |
+| **[TE02]**  Otimização Logistica | **[EP03]** Plataforma de logística com acesso restrito | **[US05:]** Eu como usuário quero realizar autenticação através do endereço de e-mail cadastrado a fim de manter meus dados seguros com minhas credenciais.|
+| **[TE02]**  Otimização Logistica | **[EP03]** Plataforma de logística com acesso restrito | **[US06:]** Eu como usuário quero criar uma conta no GummyLog usando meu endereço de e-mail para ter mais controle sobre a minha conta.|
 
-        + Viabilidade: 8
-
-        + Complexidade: 5
-
-        + Média: 7
-
-
-* Inserção de um produto já existente no estoque:
-    + US: Eu, como usuário, quero inserir uma nova quantidade em um produto já existe no estoque a fim de manter o histórico de um produto que já foi cadastrado anteriormente e ter uma noção de como meu estoque realmente está.
-        + Valor de negócio: 8
-
-        + Viabilidade: 8
-
-        + Complexidade: 3
-
-        + Média: 6,333
-
-
-* Notificações de Estoque Baixo:
-    + US: Eu, como usuário, quero receber notificações dentro da aplicação e por e-mail quando o estoque de um dos meus produtos estiver baixo para que eu não esqueça de reabastecer o estoque desse produto.
-        + Valor de negócio: 3
-
-        + Viabilidade: 8
-
-        + Complexidade: 5
-
-        + Média: 5.3333
-
-* Autenticação de usuário por e-mail:
-    + US: Eu, como usuário, quero realizar autenticação através do endereço de e-mail cadastrado a fim de manter meus dados seguros com minhas credenciais.
-
-* Criação de usuário por e-mail:
-    + US: Eu, como usuário, quero criar uma conta no GummyLog usando meu endereço de e-mail para ter mais controle sobre a minha conta.
-        + Valor de negócio: 3
-
-        + Viabilidade: 2
-
-        + Complexidade: 5
-
-        + Média: 3.333
-
-## MVP2
-
-* Criar uma nova venda relacionando produtos em estoque:
-    + US: Eu, como usuário, quero registrar uma venda para reservar a saída de um produto do meu estoque a fim de não correr o risco de fazer vendas sem o produto em estoque.
-        + Valor de negócio: 8
-
-        + Viabilidade: 8
-
-        + Complexidade: 5
-
-        + Média: 7
-
-* Dashboard com métricas de entrada e saída de produtos:
-    + US: Eu, como usuário, quero visualizar um dashboard com métricas de entrada e saída de produtos a fim de ter uma melhor noção de como meu negócio está se saindo.
-        + Valor de negócio: 8
-
-        + Viabilidade: 3
-
-        + Complexidade: 8
-
-        + Média: 6,33
-
-* Escolher para qual e-mail as notificações serão enviadas:
-    + US: Eu,, como usuário, quero escolher para qual e-mail as notificações serão enviadas a fim de manter as notificações centralizadas em um endereço reservado para essa finalidade.
-        + Valor de negócio: 2
-
-        + Viabilidade: 13
-
-        + Complexidade: 1
-
-        + Média: 5.3333
-
-* Manutenção de status de Pedidos:
-    + US: Eu, como usuário, quero alterar o status dos produtos em estoque a medida que as vendas forem andando para poder ter controle do meu processo de retirada do estoque e entrega para o cliente.
-        + Valor de negócio: 5
-
-        + Viabilidade: 8
-
-        + Complexidade: 2
-
-        + Média: 5
-
-* Sugestão de qual unidade de armazenamento o produto deve ser retirado:
-    + US: Eu, como usuário, quero receber sugestões de qual unidade de armazenamento um produto deve ser retirado para reduzir os custos de uma entrega.
-        + Valor de negócio: 3
-
-        + Viabilidade: 3
-
-        + Complexidade: 8
-
-        + Média: 4.666666
-
-* Criação de usuário por meio de oAuth.
-    + US: Eu, como usuário, quero criar uma conta no GummyLog usando minha conta Google para poupar tempo ao criar a conta.
-        + Valor de negócio: 3
-
-        + Viabilidade: 5
-
-        + Complexidade: 3
-
-        + Média: 3.666666
-
-## Requisitos Não Funcionais:
-* Sempre que um erro não relacionado ao uso da interface pelo usuário ocorrer ele deve ser registrado em um log e notificar a equipe responsável.
-* O usuário deverá realizar qualquer funcionalidade com até 5 cliques.
-* O sistema deve ajustar dinamicamente o layout e o conteúdo para diferentes tamanhos de tela, permitindo uma visualização apropriada em telas pequenas, médias e grandes.
 
 # Padrões de UI
 
