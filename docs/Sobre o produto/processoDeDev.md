@@ -47,15 +47,21 @@ sidebar_position: 2
 
 ### Requisitos Funcionais:
 
-| Valor de Fibonacci | Significado                                           |
-|-------------------|------------------------------------------------------|
-| 0                 | Tarefa sem esforço significativo, praticamente concluída.    |
-| 1                 | Tarefa muito pequena, pode ser concluída rapidamente.     |
-| 2                 | Tarefa pequena, requer um esforço mínimo.                 |
-| 3                 | Tarefa de tamanho moderado, levará algum tempo para concluir. |
-| 5                 | Tarefa um pouco maior, levará algum tempo considerável.  |
-| 8                 | Tarefa de tamanho significativo, requer esforço substancial. |
-| 13                | Tarefa grande, complexa e com alta incerteza.              |
+* **Valor de Negócio:** O Valor de Negócio se refere à importância ou benefício que uma tarefa, história de usuário, funcionalidade ou projeto tem para a organização, clientes ou partes interessadas. É a medida do valor ou impacto que a conclusão da tarefa terá no sucesso geral do projeto. Tarefas ou funcionalidades com alto Valor de Negócio geralmente são priorizadas, pois contribuem significativamente para os objetivos gerais da organização.
+
+* **Viabilidade:** A Viabilidade refere-se à capacidade de realizar com sucesso uma tarefa ou projeto. Envolve a avaliação de recursos disponíveis, restrições, obstáculos potenciais e a probabilidade de sucesso. Tarefas ou projetos com alta Viabilidade são aqueles que podem ser executados com relativa facilidade, considerando os recursos disponíveis e as restrições existentes.
+
+* **Complexidade:** A Complexidade se refere ao grau de dificuldade, intricidade ou desafio associado a uma tarefa, projeto ou funcionalidade. Tarefas de alta Complexidade são aquelas que envolvem múltiplos componentes, etapas intricadas ou requisitos técnicos avançados, tornando-as mais difíceis de serem concluídas. A Complexidade também pode estar relacionada à incerteza e à necessidade de superar desafios específicos durante a execução.
+
+| Valor de Fibonacci | Valor de Negocio     | Viabilidade      | Complexidade   |
+|-------------------|-----------------------|-----------------------|-----------------------|
+| 0                 | Sem valor de negócio  | Não Viável | Pouca Complexidade |  
+| 1                 | Mais baixo valor de negócio. | Pouco Viável | Mais Baixa Complexidade, dominio de tecnologia| 
+| 2                 | Baixo valor de negócio  | Baixa Viabilidade | Baixa Complexidade, conhecimento da tecnologia|
+| 3                 | Médio valor de negócio | Média Viabilidade | Média Complexidade, conhecimento básico da tecnologia|
+| 5                 | Intermediário valor de negócio  | Vibilidade Intermediária| Complexidade Intermediaria, tarefa trabalhosa mesmo com conhecimento da tecnologia | 
+| 8                 | Alto valor de negócio | Alta Viabilidade | Alta Complexidade, tarefa trabalhosa devido a nova tecnologia, mas dentro da realidade.  | 
+| 13                | Muito Alto valor de negócio | Viabilidade Muito Alta | Complexidade Muito Alta, tarefa extremamente trabalhosa onde a equipe não sabe por onde começar ou qual tecnologia usar |
 
 | Temas | Épicos | User Story |  Valor de Negocio | Viabilidade | Complexidade |  Média |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | --------|
