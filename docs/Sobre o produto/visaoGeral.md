@@ -13,7 +13,7 @@ O proprietário da loja Gummy's Store relata que não consegue expandir seu neg�
 <br/>
 
 
-![](../../static/img/fishbones2.png)
+![](../../static/img/Newfishbones2.png)
 
 <br/>
 
