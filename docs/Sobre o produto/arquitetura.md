@@ -35,7 +35,7 @@ GummyStore pretende expandir-se no futuro, por isso é necessário autenticar ma
 
 ## Funcionalidade:
 
-Permite que com buscas mais específicas que limitam os resultados na base de dados, se possa realizar uma filtragem dos dados realizada pelo servidor e estes sejam enviados à aplicação a qual simplesmente deve mostrá-los.
+Permite buscas com filtros mais detalhados para retornar apenas os dados necessários a serem mostrados para o usuário. Deste modo, em momento algum client side terá que renderizar uma tabela inteira ou ter que aplicar filtros do seu lado, reduzindo a complexidade algorítmica do seu lado e exigindo menos poder computacional.
 
 ```mermaid
 C4Context
