@@ -13,7 +13,7 @@ O proprietário da loja Gummy's Store relata que não consegue expandir seu neg�
 <br/>
 
 
-![](../../static/img/fishbones2.png)
+![](../../static/img/Newfishbones2.png)
 
 <br/>
 
@@ -44,11 +44,11 @@ Tendo um gerenciamento logístico simplificado eles poderão focar no que fará 
 
 |          |          |
 |--------- |--------- |
-| **Para** |Suporte de logística e estoque |
+| **Para** |Os proprietarios da GummyStore |
 |**O (nome do produto)** |GummyLog |
 |**Que** |É uma aplicaçao web que facilita as operações de adição, eliminação e atualização dos produtos em estoque; permite adicionar, atualizar e revisar o estado de encomenda |
-|**Ao contrário** |Softwares de armazenamento de dados como excel e Google Spreadsheets |
-|**Nosso Produto** |Está melhor organizado e pode executar as tarefas de atualização de forma automática sem a necessidade de estudar VBA ou JS com o Google apps |
+|**Ao contrário** |Softwares de armazenamento de dados como excel e Google Spreadsheets|
+|**Nosso Produto** |Está melhor organizado e pode executar as tarefas de atualização de forma automática sem a necessidade de estudar VBA ou JS com o Google apps e permite a integração com outras funcionalidades da aplicação além da redução de tempo com contratempos|
 
 <br/>
 
@@ -85,17 +85,25 @@ Melhorar a logística da Gummy's Store, otimizando o tempo gasto nas tarefas de 
 
 **Definição de ready(DOR)** 
 
-- Spikes realizadas, quando necessário, para cumprir os requisitos técnicos da funcionalidade
-- Histórias de usuário refinadas pelo time
+- A atividade proposta é possível de ser realizada na duração de uma Sprint
+
 - Atividades que são requisitos para esta finalizadas
+
+- Spikes realizadas para cumprir os requisitos técnicos da funcionalidade, quando necessário
+
+- Histórias de usuário refinadas pelo time:
+    - História e sua pontuação de priorização reavaliados
+    - Eventuais correções/atualizações feitas para adequa-la ao estado atual do projeto
 
 **Definição de done(DOD)**
 
-- História de usuário cumprida
+- História de usuário cumprida:
+    - Valor de negócio da história foi de fato agregado ao produto
+    - Critérios de aceitação da história atendidos
 
-- Funcionalidade testada por meio de testes de integração, unitários e, quando necessário, ponta a ponta;
+- Funcionalidade testada por meio de testes de integração, unitários e, quando necessário, ponta a ponta
 
-- O código segue as convenções feitas pela equipe e não apresenta erros de liting
+- O código segue as convenções de codificação, arquitetura e desing feitas pela equipe e não apresenta erros de liting
 
 ## Referências bibliográficas
 
