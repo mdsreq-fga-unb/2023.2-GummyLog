@@ -85,7 +85,7 @@ Melhorar a logística da Gummy's Store, otimizando o tempo gasto nas tarefas de 
 
 **Definição de ready(DOR)** 
 
-- Requisito é comportado por uma sprint
+- A atividade proposta é possível de ser realizada na duração de uma Sprint
 
 - Atividades que são requisitos para esta finalizadas
 
