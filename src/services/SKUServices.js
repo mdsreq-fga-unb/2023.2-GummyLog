@@ -19,8 +19,17 @@ export const novoSKU = async (data) => {
 export const carregarTodosSKU = async () => {
     try {
         const SKUS = await SKURepositories.carregarTodosSKU();
-        return { response:200, message: SKUS.rows.join};
+        return SKUS;
     } catch (error) {
-        throw  new Error(error);
+        throw new Error(error);
+    }
+}
+
+export const filtrarSKU = async (nome, marcaId, unidadeDeArmazenamento, dataInicio, dataFim) => {
+    try {
+        const SKUS = await SKURepositories.filtraSKU(nome, marcaId, unidadeDeArmazenamento, dataInicio, dataFim);
+        return SKUS;
+    } catch (error) {
+        throw new Error(error);
     }
 }

@@ -26,3 +26,34 @@ export const carregarTodosSKU = async () => {
         throw new Error(error)
     }
 }
+
+export const filtraSKU = async (nome, marcaId, unidadeDeArmazenamento, dataInicio, dataFim) => {
+    try {
+
+        let query = `SELECT * FROM produtos WHERE 1=1`;
+        const values = [];
+
+        if (marcaId) {
+            query += ` AND marca_id = $1`;
+            values.push(marcaId);
+        }
+        if (nome) {
+            query += ` AND nome = $1`;
+            values.push(nome);
+        }
+        if (unidadeDeArmazenamento) {
+            query += ` AND unidade_de_estoque_id = $1`;
+            values.push(unidadeDeArmazenamento);
+        }
+        if (dataInicio) {
+            query += ` AND ultimo_abastecimento = $1`;
+            values.push(dataInicio);
+        }
+
+        const result = await db.query(query, values);
+        return result;
+
+    } catch (error) {
+        throw new Error(error);
+    }
+} 
