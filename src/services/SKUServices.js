@@ -15,3 +15,12 @@ export const novoSKU = async (data) => {
         throw new Error(error);
     }
 }
+
+export const carregarTodosSKU = async () => {
+    try {
+        const SKUS = await SKURepositories.carregarTodosSKU();
+        return { response:200, message: SKUS.rows.join};
+    } catch (error) {
+        throw  new Error(error);
+    }
+}

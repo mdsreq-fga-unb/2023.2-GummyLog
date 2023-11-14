@@ -18,3 +18,11 @@ export const procurarSKU = async (data) => {
         throw new Error(error);
     }
 }
+
+export const carregarTodosSKU = async () => {
+    try {
+        return await db.query(`SELECT * FROM produtos`);
+    } catch (error) {
+        throw new Error(error)
+    }
+}
