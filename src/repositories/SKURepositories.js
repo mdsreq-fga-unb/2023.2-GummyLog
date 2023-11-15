@@ -45,9 +45,10 @@ export const filtraSKU = async (nome, marcaId, unidadeDeArmazenamento, dataInici
             query += ` AND unidade_de_estoque_id = $1`;
             values.push(unidadeDeArmazenamento);
         }
-        if (dataInicio) {
-            query += ` AND ultimo_abastecimento = $1`;
+        if (dataInicio && dataFim) {
+            query += ` AND ultimo_abastecimento BETWEEN $${values.length + 1} AND $${values.length + 2}`;
             values.push(dataInicio);
+            values.push(dataFim);
         }
 
         const result = await db.query(query, values);
