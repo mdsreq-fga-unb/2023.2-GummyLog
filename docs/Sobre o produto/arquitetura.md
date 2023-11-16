@@ -33,9 +33,9 @@ A maioria das funcionalidades da aplicação são de modificação, leitura e el
 
 GummyStore pretende expandir-se no futuro, por isso é necessário autenticar mais usuários e armazenar mais produtos, em uma arquitetura onde toda essa informação é centralizada é muito mais fácil realizar as mudanças necessários.
 
-## Equipos:
+## Funcionalidade:
 
-A aplicação deve poder ser utilizada não só em computadores mas também em dispositivos móveis, estes têm capacidade de armazenamento e processamento limitadas, para assegurar que a aplicação corra bem será utilizada a arquitetura Client-Server já que nesta a aplicação unicamente deve ser capaz de realizar requests e é o servidor o que se ocupará de realizar todo o trabalho pesado.
+Permite buscas com filtros mais detalhados para retornar apenas os dados necessários a serem mostrados para o usuário. Deste modo, em momento algum client side terá que renderizar uma tabela inteira ou ter que aplicar filtros do seu lado, reduzindo a complexidade algorítmica do seu lado e exigindo menos poder computacional.
 
 ```mermaid
 C4Context
