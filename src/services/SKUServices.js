@@ -4,7 +4,7 @@ import { batizaSKU } from "../helpers/SKUHelper.js";
 
 export const novoSKU = async (data) => {
     try {
-        const existe = await SKURepositories.procurarSKU({ nome: data.nome });
+        const existe = await SKURepositories.buscaSKU({ nome: data.nome });
         if (existe.rowCount > 0) return { response: 409, message: "Produto já Cadastrado" };
         const marcaNome = await marcasRepositories.procurarMarcaPorId({ id: data.marcaId });
         const skuNome = batizaSKU({ nome: data.nome, marca: marcaNome.rows[0].nome });
@@ -16,18 +16,9 @@ export const novoSKU = async (data) => {
     }
 }
 
-export const carregarTodosSKU = async () => {
+export const buscaSKU = async (data) => {
     try {
-        const SKUS = await SKURepositories.carregarTodosSKU();
-        return SKUS;
-    } catch (error) {
-        throw new Error(error);
-    }
-}
-
-export const filtrarSKU = async (nome, marcaId, unidadeDeArmazenamento, dataInicio, dataFim) => {
-    try {
-        const SKUS = await SKURepositories.filtraSKU(nome, marcaId, unidadeDeArmazenamento, dataInicio, dataFim);
+        const SKUS = await SKURepositories.buscaSKU({...data});
         return SKUS;
     } catch (error) {
         throw new Error(error);

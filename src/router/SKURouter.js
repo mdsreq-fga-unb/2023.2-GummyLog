@@ -7,6 +7,5 @@ const SKURouter = Router();
 
 SKURouter.post("/novo-sku", validateSchemaMiddleware(SKUSchema), SKUController.novoSKU);
 SKURouter.get("/busca-sku", SKUController.buscaSKU);
-SKURouter.post("/filtrar-sku", SKUController.filtraSKU);
 
 export default SKURouter;
