@@ -6,5 +6,6 @@ import { validateSchemaMiddleware } from "../middlewares/validateSchemaMiddlewar
 const SKURouter = Router();
 
 SKURouter.post("/novo-sku", validateSchemaMiddleware(SKUSchema), SKUController.novoSKU);
+SKURouter.get("/busca-sku", SKUController.buscaSKU);
 
 export default SKURouter;

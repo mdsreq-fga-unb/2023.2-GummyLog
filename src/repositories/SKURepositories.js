@@ -11,9 +11,37 @@ export const novoSKU = async (data) => {
     }
 }
 
-export const procurarSKU = async (data) => {
+export const buscaSKU = async ({ nome, marcaId, unidadeDeArmazenamento, dataInicio, dataFim }) => {
     try {
-        return await db.query(`SELECT * FROM produtos WHERE nome = $1`, [data.nome]);
+        let query = `SELECT * FROM produtos`;
+        const values = [];
+        if (nome || marcaId || unidadeDeArmazenamento || (dataInicio && dataFim)) {
+            query += ` WHERE`;
+        }
+
+        if (marcaId) {
+            values.push(marcaId);
+            query += ` ${values.length > 1 ? "AND" : ""} marca_id = $${values.length}`;
+        }
+
+        if (nome) {
+            values.push(nome);
+            query += ` ${values.length > 1 ? "AND" : ""} nome = $${values.length}`;
+        }
+
+        if (unidadeDeArmazenamento) {
+            values.push(unidadeDeArmazenamento);
+            query += ` ${values.length > 1 ? "AND" : ""} unidade_de_estoque_id = $${values.length}`;
+        }
+
+        if (dataInicio && dataFim) {
+            values.push(dataInicio, dataFim);
+            query += ` ${values.length > 2 ? "AND" : ""} ultimo_abastecimento BETWEEN $${values.length - 1} AND $${values.length}`;
+        }
+
+        const result = await db.query(query, values);
+        return result.rows;
+
     } catch (error) {
         throw new Error(error);
     }
