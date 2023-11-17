@@ -13,15 +13,12 @@ export const novoSKU = async (req, res) => {
 export const buscaSKU = async (req, res) => {
     const data = req.query;
 
-    try {
-
-        
+    try {   
         const ans = await SKUServices.buscaSKU({...data});
-
-        if (ans.rows.length === 0){
+        if (ans.length === 0){
             return res.status(404).json({ mensagem: "Nenhum produto encontrado" });
         }
-
+        res.json(ans)
         return res.json(ans.rows);
     } catch (error) {
         throw new Error(error);

@@ -11,36 +11,38 @@ export const novoSKU = async (data) => {
     }
 }
 
-export const buscaSKU = async (nome, marcaId, unidadeDeArmazenamento, dataInicio, dataFim) => {
+export const buscaSKU = async ({ nome, marcaId, unidadeDeArmazenamento, dataInicio, dataFim }) => {
     try {
-
         let query = `SELECT * FROM produtos`;
         const values = [];
-        if (marcaId || nome || unidadeDeArmazenamento || dataInicio && dataFim) {
-            query += `WHERE`;
+        if (nome || marcaId || unidadeDeArmazenamento || (dataInicio && dataFim)) {
+            query += ` WHERE`;
         }
+
         if (marcaId) {
             values.push(marcaId);
-            query += ` ${values.length > 0 ? "AND" : ""} marca_id = $${values.length}`;
+            query += ` ${values.length > 1 ? "AND" : ""} marca_id = $${values.length}`;
         }
+
         if (nome) {
             values.push(nome);
-            query += ` ${values.length > 0 ? "AND" : ""} nome = $${values.length}`;
+            query += ` ${values.length > 1 ? "AND" : ""} nome = $${values.length}`;
         }
+
         if (unidadeDeArmazenamento) {
             values.push(unidadeDeArmazenamento);
-            query += ` ${values.length > 0 ? "AND" : ""} unidade_de_estoque_id = $${values.length}`;
+            query += ` ${values.length > 1 ? "AND" : ""} unidade_de_estoque_id = $${values.length}`;
         }
+
         if (dataInicio && dataFim) {
-            values.push(dataInicio);
-            values.push(dataFim);
-            query += ` ${values.length > 0 ? "AND" : ""} ultimo_abastecimento BETWEEN $${values.length-1} AND $${values.length}`;
+            values.push(dataInicio, dataFim);
+            query += ` ${values.length > 2 ? "AND" : ""} ultimo_abastecimento BETWEEN $${values.length - 1} AND $${values.length}`;
         }
 
         const result = await db.query(query, values);
-        return result;
+        return result.rows;
 
     } catch (error) {
         throw new Error(error);
     }
-} 
+}
