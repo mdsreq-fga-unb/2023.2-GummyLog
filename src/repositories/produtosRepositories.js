@@ -1,31 +1,24 @@
 import db from "../database/db.js";
 
-export const novoSKU = async (data) => {
+export const novoProduto = async ({skuId, unidadeDeEstoqueId}) => {
     try {
         return await db.query(`
-            INSERT INTO "SKUs" (sku_name, nome, marca_id, descricao, ultimo_abastecimento)
-            VALUES ($1, $2, $3, $4, current_timestamp)
-            `, [data.skuNome, data.nome, data.marcaId, data.descricao]);
+            INSERT INTO produtos (sku_id, unidade_de_estoque_id)
+            VALUES ($1, $2)
+            `, [skuId, unidadeDeEstoqueId]);
     } catch (error) {
         throw new Error(error);
     }
 }
 
-export const buscaSKU = async ({ id, nome, marcaId, skuNome, dataInicio, dataFim }) => {
+export const buscaProduto = async ({ nome, marcaId, unidadeDeArmazenamento, dataInicio, dataFim }) => {
     try {
-        let query = `SELECT * FROM "SKUs"`;
+        let query = `SELECT * FROM produtos`;
         const values = [];
-        if (id || nome || marcaId || skuNome || (dataInicio && dataFim)) {
+        if (nome || marcaId || unidadeDeArmazenamento || (dataInicio && dataFim)) {
             query += ` WHERE`;
         }
-        if (id) {
-            values.push(id);
-            query += `${values.length > 1 ? "AND" : ""} id = $${values.length}`
-        }
-        if (skuNome) {
-            values.push(skuNome);
-            query += ` ${values.length > 1 ? "AND" : ""} sku_name = $${values.length}`
-        }
+
         if (marcaId) {
             values.push(marcaId);
             query += ` ${values.length > 1 ? "AND" : ""} marca_id = $${values.length}`;
@@ -34,6 +27,11 @@ export const buscaSKU = async ({ id, nome, marcaId, skuNome, dataInicio, dataFim
         if (nome) {
             values.push(nome);
             query += ` ${values.length > 1 ? "AND" : ""} nome = $${values.length}`;
+        }
+
+        if (unidadeDeArmazenamento) {
+            values.push(unidadeDeArmazenamento);
+            query += ` ${values.length > 1 ? "AND" : ""} unidade_de_estoque_id = $${values.length}`;
         }
 
         if (dataInicio && dataFim) {
