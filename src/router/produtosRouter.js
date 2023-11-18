@@ -8,6 +8,6 @@ const produtoRouter = Router();
 produtoRouter.get("/busca-produto", produtosController.buscaProduto);
 
 produtoRouter.post("/novo-produto", validateSchemaMiddleware(produtoSchema), produtosController.novoProduto);
-produtoRouter.post("/atualiza-produto", produtosController.atualizaProduto);
+produtoRouter.put("/atualiza-produto", validateSchemaMiddleware(produtoSchema), produtosController.atualizaProduto);
 
 export default produtoRouter;

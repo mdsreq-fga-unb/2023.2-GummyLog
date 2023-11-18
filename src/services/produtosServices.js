@@ -4,7 +4,7 @@ import * as SKURepositories from "../repositories/SKURepositories.js";
 export const novoProduto = async (data) => {
     try {
         const existe = await SKURepositories.buscaSKU(data);
-        console.log(existe.rows);
+
         if (existe.rowCount === 0) {
             return { response: 404, message: "SKU não encontrado" }
         }
@@ -26,12 +26,13 @@ export const buscaProduto = async (data) => {
 }
 
 export const atualizaProduto = async (data) => {
-    console.log(data);
+    const {skuId} = data;
+
     try {
-        const existeSku = await produtosRepositories.buscaProduto(data);
-        console.log(existeSku);
-        if (existeSku.rowsCount == 0) {
-            return { response: 404, message: "SKU não encontrado" }
+        const existeProduto = await produtosRepositories.buscaProduto({skuId});
+
+        if (existeProduto.length === 0) {
+            return { response: 404, message: "Produto não encontrado" }
         }
         await produtosRepositories.atualizaProduto({...data});
         return { response: 200, message: "Produto Atualizado" };

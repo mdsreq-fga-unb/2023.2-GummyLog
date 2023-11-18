@@ -15,7 +15,7 @@ export const buscaProduto = async ({ id, skuId, unidadeDeEstoqueId}) => {
     try {
         let query = `SELECT * FROM produtos`;
         const values = [];
-        if (id || skuId || unidadeDeEstoqueId || quantidade) {
+        if (id || skuId || unidadeDeEstoqueId) {
             query += ` WHERE`;
         }
 
@@ -44,12 +44,9 @@ export const buscaProduto = async ({ id, skuId, unidadeDeEstoqueId}) => {
 
 export const atualizaProduto = async ({ quantidade, unidadeDeEstoqueId, skuId }) => {
     try {
-        console.log(quantidade, unidadeDeEstoqueId, skuId);
-        if (!quantidade || !unidadeDeEstoqueId || !skuId) {
-            return { response: 404, message:"Todos os campos são obrigatorios" }
-        }
         return await db.query(`
-        UPDATE produtos SET quantidade = $1 WHERE unidade_de_estoque_id = $2 AND sku_id = $3`
+            UPDATE produtos SET quantidade = $1 WHERE unidade_de_estoque_id = $2 AND sku_id = $3;
+        `
         , [quantidade, unidadeDeEstoqueId, skuId]);
     } catch (error) {
         throw new Error(error);
