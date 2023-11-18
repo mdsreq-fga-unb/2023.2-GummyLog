@@ -5,8 +5,9 @@ import produtoSchema from "../schemas/produtoSchema.js";
 
 const produtoRouter = Router();
 
-produtoRouter.get("/busca-sku", produtosController.buscaProduto);
+produtoRouter.get("/busca-produto", produtosController.buscaProduto);
 
 produtoRouter.post("/novo-produto", validateSchemaMiddleware(produtoSchema), produtosController.novoProduto);
+produtoRouter.put("/atualiza-produto", validateSchemaMiddleware(produtoSchema), produtosController.atualizaProduto);
 
 export default produtoRouter;

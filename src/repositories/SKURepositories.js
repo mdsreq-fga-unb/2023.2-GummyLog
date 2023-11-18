@@ -11,7 +11,7 @@ export const novoSKU = async (data) => {
     }
 }
 
-export const buscaSKU = async ({ id, nome, marcaId, skuNome, dataInicio, dataFim }) => {
+export const buscaSKU = async ({ id, nome, marcaId, skuNome, dataInicio, dataFim}) => {
     try {
         let query = `SELECT * FROM "SKUs"`;
         const values = [];
@@ -40,7 +40,6 @@ export const buscaSKU = async ({ id, nome, marcaId, skuNome, dataInicio, dataFim
             values.push(dataInicio, dataFim);
             query += ` ${values.length > 2 ? "AND" : ""} ultimo_abastecimento BETWEEN $${values.length - 1} AND $${values.length}`;
         }
-
         const result = await db.query(query, values);
         return result.rows;
 

@@ -4,4 +4,4 @@ export const healthCheck = async (req, res) => {
 	} catch (error) {
 		throw new Error(error);
 	}
-};
+};	
