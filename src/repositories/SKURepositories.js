@@ -11,12 +11,18 @@ export const novoSKU = async (data) => {
     }
 }
 
-export const buscaSKU = async ({ id, nome, marcaId, skuNome, dataInicio, dataFim }) => {
+export const buscaSKU = async ({ id, nome, marcaId, skuNome, dataInicio, dataFim, skuId }) => {
     try {
         let query = `SELECT * FROM "SKUs"`;
         const values = [];
-        if (id || nome || marcaId || skuNome || (dataInicio && dataFim)) {
+
+        if (id || nome || marcaId || skuNome || skuId || (dataInicio && dataFim)) {
             query += ` WHERE`;
+        }
+
+        if (skuId) {
+            values.push(skuId);
+            query += `${values.length > 1 ? "AND" : ""} sku_id = $${values.length}`
         }
         if (id) {
             values.push(id);
@@ -40,8 +46,8 @@ export const buscaSKU = async ({ id, nome, marcaId, skuNome, dataInicio, dataFim
             values.push(dataInicio, dataFim);
             query += ` ${values.length > 2 ? "AND" : ""} ultimo_abastecimento BETWEEN $${values.length - 1} AND $${values.length}`;
         }
-
         const result = await db.query(query, values);
+        console.log(query);
         return result.rows;
 
     } catch (error) {
