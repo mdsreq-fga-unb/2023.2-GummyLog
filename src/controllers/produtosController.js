@@ -16,11 +16,8 @@ export const buscaProduto = async (req, res) => {
 
     try {   
         const ans = await produtosServices.buscaProduto({...data});
-        if (ans.length === 0){
-            return res.status(404).json({ mensagem: "Nenhum produto encontrado" });
-        }
-        res.json(ans)
-        return res.json(ans.rows);
+
+        return res.status(ans.response).send({message: ans.message, payload: ans.payload});
     } catch (error) {
         throw new Error(error);
     }

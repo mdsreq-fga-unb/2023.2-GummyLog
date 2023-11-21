@@ -13,7 +13,7 @@ export const novoProduto = async ({ skuId, unidadeDeEstoqueId, quantidade }) => 
 
 export const buscaProduto = async ({ id, skuId, unidadeDeEstoqueId}) => {
     try {
-        let query = `SELECT * FROM produtos`;
+        let query = `SELECT produtos.id, "SKUs".sku_name AS "SKU", "unidade_de_estoque".nome AS "unidade_de_estoque", produtos.quantidade  FROM produtos`;
         const values = [];
         if (id || skuId || unidadeDeEstoqueId) {
             query += ` WHERE`;
@@ -33,7 +33,7 @@ export const buscaProduto = async ({ id, skuId, unidadeDeEstoqueId}) => {
             values.push(unidadeDeEstoqueId);
             query += ` ${values.length > 1 ? "AND" : ""} unidade_de_estoque_id = $${values.length}`;
         }
-        
+        query += ` JOIN "SKUs" ON produtos.sku_id = "SKUs".id JOIN "unidade_de_estoque" ON produtos.unidade_de_estoque_id = "unidade_de_estoque".id`
         const result = await db.query(query, values);
         return result.rows;
 
