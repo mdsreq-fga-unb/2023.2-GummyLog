@@ -13,7 +13,7 @@ export const novoProduto = async ({ skuId, unidadeDeEstoqueId, quantidade }) => 
 
 export const buscaProduto = async ({ id, skuId, unidadeDeEstoqueId}) => {
     try {
-        let query = `SELECT produtos.id, "SKUs".sku_name AS "SKU", "unidade_de_estoque".nome AS "unidade_de_estoque", produtos.quantidade  FROM produtos`;
+        let query = `SELECT produtos.id, "SKUs".sku_name AS "SKU", "SKUs".nome AS nome, "unidade_de_estoque".nome AS "unidade_de_estoque", produtos.quantidade  FROM produtos`;
         const values = [];
         if (id || skuId || unidadeDeEstoqueId) {
             query += ` WHERE`;
