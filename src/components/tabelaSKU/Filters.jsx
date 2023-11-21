@@ -1,10 +1,10 @@
 import { Box, Icon, Input, InputGroup, InputLeftElement } from '@chakra-ui/react';
-import SearchIcon from "./icons/SearchIcon";
+import SearchIcon from "../icons/SearchIcon";
 import React from 'react';
 
 const Filters = ({ columnFilters, setColumnFilters }) => {
     const taskName = columnFilters.find(
-        f => f.id === 'id'
+        f => f.id === 'sku_name'
     )?.value || '';
 
     const onFilterChange = (id, value) => setColumnFilters(
@@ -22,11 +22,11 @@ const Filters = ({ columnFilters, setColumnFilters }) => {
         <Input
           type="text"
           variant="filled"
-          placeholder="Search id"
+          placeholder="Search SKU"
           borderRadius={5} 
           value={taskName}
           onChange={
-            (e) => onFilterChange('id', e.target.value)
+            (e) => onFilterChange('sku_name', e.target.value)
           }
         />
       </InputGroup>

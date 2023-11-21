@@ -1,42 +1,39 @@
-import { useState } from "react";
-import { Box, Button, ButtonGroup, Icon } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
+import { Box, Button, ButtonGroup, Text, Icon } from "@chakra-ui/react";
 import { flexRender, getCoreRowModel, getFilteredRowModel, getPaginationRowModel, getSortedRowModel, useReactTable } from "@tanstack/react-table";
-import DATA from "../data"
 import Filters from "./Filters";
-import SortIcon from "./icons/SortIcon";
+import SortIcon from "../icons/SortIcon";
+import * as api from "../../services/api";
 
 const columns = [
 {
-    accessorKey: 'id',
-    header: "ID",
+    accessorKey: 'SKU',
+    header: "SKU",
     cell: (props) => <p>{props.getValue()}</p>
 },
 {
-    accessorKey: 'produto',
-    header: "Produto",
+    accessorKey: 'nome',
+    header: "Nome",
     cell: (props) => <p>{props.getValue()}</p>
 },
 {
-    accessorKey: 'desc',
-    header: "Descrição",
+    accessorKey: 'unidade_de_estoque',
+    header: "Unidade de estoque",
     cell: (props) => <p>{props.getValue()}</p>
 },
 {
-    accessorKey: 'marca',
-    header: "Marca",
-    cell: (props) => <p>{props.getValue()}</p>
-},
-{
-    accessorKey: 'qtd',
+    accessorKey: 'quantidade',
     header: "Quantidade",
     cell: (props) => <p>{props.getValue()}</p>
-},
+}
 ]
 
-const TaskTable = () => {
-  const[data,setData] = useState(DATA)
+const TaskTableProdutos = () => {
+  const[data,setData] = useState([])
   const[columnFilters, setColumnFilters] = useState([])
- 
+  useEffect(()=>{
+    api.getProdutos().then(res => setData(res.data.payload)).catch(err => alert(err))
+  },[])
   const table = useReactTable({
     data,
     columns,
@@ -104,10 +101,10 @@ const TaskTable = () => {
             }
         </Box>
         <br/>
-        <text mb={2}>
+        <Text mb={2}>
             Page {table.getState().pagination.pageIndex + 1} of {" "}
             {table.getPageCount()}
-        </text>
+        </Text>
         <br/>
         <ButtonGroup size="sm" isAttached variant="outline">
         <Button
@@ -126,4 +123,4 @@ const TaskTable = () => {
     </Box>
   );
 };
-export default TaskTable;
+export default TaskTableProdutos;
