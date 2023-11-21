@@ -20,7 +20,7 @@ export const buscaSKU = async (data) => {
     
     try {
         const skus = await SKURepositories.buscaSKU({...data});
-        return skus;
+        return { response: 200, payload: skus };
     } catch (error) {
         throw new Error(error);
     }

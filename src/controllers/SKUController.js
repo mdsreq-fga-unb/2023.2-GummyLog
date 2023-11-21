@@ -15,11 +15,8 @@ export const buscaSKU =  async (req, res) => {
     const data = req.query;
     try {   
         const ans = await SKUServices.buscaSKU({...data});
-        if (ans.length === 0){
-            return res.status(404).json({ mensagem: "Nenhum SKU encontrado" });
-        }
-        res.json(ans)
-        return res.json(ans.rows);
+
+        return res.status(ans.response).send({ payload: ans.payload });
     } catch (error) {
         throw new Error(error);
     }

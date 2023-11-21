@@ -19,22 +19,25 @@ export const novoProduto = async (data) => {
 export const buscaProduto = async (data) => {
     try {
         const produtos = await produtosRepositories.buscaProduto({ ...data });
-        return produtos;
+        if (produtos.length === 0) {
+            return { message: "Produto não Encontrado", response: 404};
+        }
+        return { response: 200, message: "Produto encontrado", payload: produtos };
     } catch (error) {
         throw new Error(error);
     }
 }
 
 export const atualizaProduto = async (data) => {
-    const {skuId} = data;
+    const { skuId } = data;
 
     try {
-        const existeProduto = await produtosRepositories.buscaProduto({skuId});
+        const existeProduto = await produtosRepositories.buscaProduto({ skuId });
 
         if (existeProduto.length === 0) {
             return { response: 404, message: "Produto não encontrado" }
         }
-        await produtosRepositories.atualizaProduto({...data});
+        await produtosRepositories.atualizaProduto({ ...data });
         return { response: 200, message: "Produto Atualizado" };
     } catch (error) {
         throw new Error(error)

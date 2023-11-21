@@ -13,7 +13,7 @@ export const novoSKU = async (data) => {
 
 export const buscaSKU = async ({ id, nome, marcaId, skuNome, dataInicio, dataFim}) => {
     try {
-        let query = `SELECT * FROM "SKUs"`;
+        let query = `SELECT "SKUs".id, sku_name, "SKUs".nome, marcas.nome AS marca, descricao, ultimo_abastecimento  FROM "SKUs"`;
         const values = [];
         if (id || nome || marcaId || skuNome || (dataInicio && dataFim)) {
             query += ` WHERE`;
@@ -40,6 +40,7 @@ export const buscaSKU = async ({ id, nome, marcaId, skuNome, dataInicio, dataFim
             values.push(dataInicio, dataFim);
             query += ` ${values.length > 2 ? "AND" : ""} ultimo_abastecimento BETWEEN $${values.length - 1} AND $${values.length}`;
         }
+        query += ` JOIN "marcas" ON "SKUs".marca_id = marcas.id;`
         const result = await db.query(query, values);
         return result.rows;
 
