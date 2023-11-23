@@ -18,16 +18,17 @@ Documentação e software em desenvolvimento
 | Data | Versão | Descrição | Autor |
 |------|--------|-----------|-------|
 | 21/09/2023 | 0.1 | Criação e deploy da primeira versão da documentação com informações sobre nosso produto e estratégias de desenvolvimento | Adriano Fonseca |
+| 23/11/2023 | 0.2 | Criação das branches de front, back e consolidação do branch Strategy, inserção parcial de 4 US | Todos |
 
 ## Equipe
 
 | Papel | Atribuições | Responsável | Participantes |
 |-------|-------------|-------------|---------------|
-|Dev back-end | Codificar o back end, adicionando end-points para cumprir as regras de negócio | Adriano fonseca | Todos |
-| Dev front-end | Codificar o lado do cliente em nossa aplicação para a visualização de dados e cumprimento das regras de negócio  | Hauedy Wegener | Todos |
-Dev back-end | Codificar o back end, adicionando end-points para cumprir as regras de negócio | João Vitor Lopes | Todos |  
-Dev Master | Gerenciamento de desenvolvimento do produto e comunicação com cliente | Sebastián Héctor | Todos |
-| Dev CI-test | Definição e manutenção da estrutura de lançamentos e assegurar a qualidade do código por meio de testes automatizados | Necivaldo Amaral | Todos |
+|Tech lead | Pessoa responsável por tomar decisões técnicas do projeto, e auxiliar as outras partes no desenvolvimento do projeto, assim como revisar códigos e validar. | Adriano fonseca | Todos |
+| Dev front-end | Responsável por colocar em código a interface do projeto e realizar as devidas integrações com o backend.  | Hauedy Wegener | Todos |
+Dev back-end | Parte responsável por codificar as regras de negócios, endpoints e a comunicação com o banco de dados, assim como desenhar o banco de dados e realizar a comunicação do banco com o backend. | Necivaldo Amaral | Todos |  
+Dev Master | Responsável por gerenciar o backlog, estabelecer regras de negocio e comunicação com o cliente. | Sebastián Héctor | Todos |
+| Dev CI-test | Responsável por estabelecer os fluxos de integração continua e codificar os testes para validação dos códigos. | João Vitor Lopes | Todos |
 
 
 ## Matriz de comunicação
@@ -89,6 +90,17 @@ As sprints são planejadas para durar duas semanas, entretando, para adequar ao 
 | Escopo inicial do projeto foi maior do que a capacidade da equipe | Revisamos nossos objetivos e difinimos um escopo factível e bem delimitado | Criar visão do produto e compreender nosso ponto de atuação|
 |  Falta de conhecimento técnico na equipe dificultou a inserção da nossa documentação no Github Pages | Realização de Software Dojo sobre Docusaurus e Markdown | Criação de documentação utilizando o docusaurus |
 | Dificuldades ao realizar o deploy | Pair Programing utilizando a documentação do docusaurus como apoio e realização do deploy | Deploy da documentação |
+
+### Unidade 3
+
+| Lição Aprendida | Ação Tomada | Dificuldade Superada |
+|---------------|------------|--------------|
+| Falta de conhecimento técnico prejudicou o tempo de execução das atividades | Execução de práticas de pair programming | desenvolvimento do back-end e front-end |
+
+## Vídeos de apresentação
+
+### Sprint 3 - Back
+[Apresentação - Back](https://www.youtube.com/watch?v=wEt0R5GsOdY)
 
 ## Referências bibliográficas
 
