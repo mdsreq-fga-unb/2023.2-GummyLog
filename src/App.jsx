@@ -1,7 +1,7 @@
 import { Box, Heading } from "@chakra-ui/react";
 import Router from "./router";
 import TaskTableProdutos from "./components/tabelaProdutos/TaskTableProdutos";
-import Header from "./Components/Header";
+import Header from "./components/Header";
 
 
 function App() {
@@ -10,7 +10,6 @@ function App() {
       <Header/>
       <Heading mb={10}></Heading>
       <Router />
-      <TaskTableProdutos></TaskTableProdutos>
     </Box>
   );
 }
