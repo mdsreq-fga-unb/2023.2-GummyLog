@@ -16,7 +16,6 @@ export const buscaProduto = async (req, res) => {
 
     try {   
         const ans = await produtosServices.buscaProduto({...data});
-
         return res.status(ans.response).send({message: ans.message, payload: ans.payload});
     } catch (error) {
         throw new Error(error);
