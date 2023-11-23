@@ -15,7 +15,7 @@ const Filters = ({ columnFilters, setColumnFilters }) => {
 
   return (
     <Box mb={6}>
-      <InputGroup size='sm' maxW='12rem'>
+      <InputGroup size='sm' maxW='12rem' bg="#F8F8F8" borderRadius="10px">
         <InputLeftElement pointerEvents='none'>
           <Icon as={SearchIcon} />
         </InputLeftElement>
@@ -28,6 +28,9 @@ const Filters = ({ columnFilters, setColumnFilters }) => {
           onChange={
             (e) => onFilterChange('SKU', e.target.value)
           }
+          _placeholder={{
+            color: '#808080',
+          }}
         />
       </InputGroup>
     </Box>
