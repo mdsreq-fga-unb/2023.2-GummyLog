@@ -128,6 +128,29 @@ sidebar_position: 2
 | **[TE02]**  Otimização Logistica | **[EP03]** Plataforma de logística com acesso restrito | **[US05:]** Eu como usuário quero realizar autenticação através do endereço de e-mail cadastrado a fim de manter meus dados seguros com minhas credenciais.|
 | **[TE02]**  Otimização Logistica | **[EP03]** Plataforma de logística com acesso restrito | **[US06:]** Eu como usuário quero criar uma conta no GummyLog usando meu endereço de e-mail para ter mais controle sobre a minha conta.|
 
+# Definição de ready e done
+
+**Definição de ready(DOR)** 
+
+- A atividade proposta é possível de ser realizada na duração de uma Sprint
+
+- Atividades que são requisitos para esta finalizadas
+
+- Spikes realizadas para cumprir os requisitos técnicos da funcionalidade, quando necessário
+
+- Histórias de usuário refinadas pelo time:
+    - História e sua pontuação de priorização reavaliados
+    - Eventuais correções/atualizações feitas para adequa-la ao estado atual do projeto
+
+**Definição de done(DOD)**
+
+- História de usuário cumprida:
+    - Valor de negócio da história foi de fato agregado ao produto
+    - Critérios de aceitação da história atendidos
+
+- Funcionalidade testada por meio de testes de integração, unitários e, quando necessário, ponta a ponta
+
+- O código segue as convenções de codificação, arquitetura e desing feitas pela equipe e não apresenta erros de liting
 
 # Padrões de UI
 
