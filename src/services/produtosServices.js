@@ -66,7 +66,6 @@ cron.schedule('0 0 * * 0', async () => {
         };
         try {
             await transporter.sendMail(mensagem);
-            console.log(`email enviado para ${mensagem.to}`)
         } catch (error) {
             throw new Error(error);
         }

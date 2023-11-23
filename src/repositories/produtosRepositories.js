@@ -56,7 +56,6 @@ export const atualizaProduto = async ({ quantidade, unidadeDeEstoqueId, skuId })
 export const verificaEstoqueProduto = async () => {
     try {
         const produtos = await db.query('SELECT id, unidade_de_estoque_id FROM produtos WHERE quantidade < 20');
-        console.log('aqui', produtos.rows);
         return produtos.rows;
     } catch (error) {
         throw new Error(error);
