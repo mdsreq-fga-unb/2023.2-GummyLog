@@ -1,5 +1,7 @@
 import * as produtosRepositories from "../repositories/produtosRepositories.js";
 import * as SKURepositories from "../repositories/SKURepositories.js";
+import cron from "node-cron";
+import {transporter} from "../helpers/emailHelper.js";
 
 export const novoProduto = async (data) => {
     try {
@@ -43,3 +45,29 @@ export const atualizaProduto = async (data) => {
         throw new Error(error)
     }
 }
+    
+export const verificaEstoqueProduto = async () => {
+    try {
+        const produtos = await produtosRepositories.verificaEstoqueProduto();
+        return produtos;
+    } catch (error) {
+        throw new Error(error);
+    }
+}
+
+cron.schedule('0 0 * * 0', async () => {
+    const produtos = await verificaEstoqueProduto();
+    produtos.forEach(async (produto) => {
+        const mensagem = {
+            from: 'junior.amaral.2121@gmail.com',
+            to: 'gummylognotify@gmail.com',
+            subject: 'Notificação de Estoque Baixo',
+            text: `O produto ${produto.id} está com estoque baixo na unidade de estoque: (${produto.unidade_de_estoque_id} ).`,
+        };
+        try {
+            await transporter.sendMail(mensagem);
+        } catch (error) {
+            throw new Error(error);
+        }
+    })
+});

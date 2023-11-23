@@ -9,7 +9,7 @@ export const novoSKU = async (data) => {
         const skuNome = batizaSKU({ nome: data.nome, marca: marcaNome.rows[0].nome });
         const skuData = { ...data, skuNome };
         await SKURepositories.novoSKU(skuData);
-        return { response: "201", message: "SKU criado com sucesso" };
+        return { response: 201, message: "SKU criado com sucesso" };
 
     } catch (error) {
         throw new Error(error);
