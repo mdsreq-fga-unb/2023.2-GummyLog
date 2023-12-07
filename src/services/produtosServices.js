@@ -1,7 +1,8 @@
 import * as produtosRepositories from "../repositories/produtosRepositories.js";
 import * as SKURepositories from "../repositories/SKURepositories.js";
 import cron from "node-cron";
-import {transporter} from "../helpers/emailHelper.js";
+import { transporter } from "../helpers/emailHelper.js";
+import { batizaOrdemDeVenda } from "../helpers/vendaHelper.js";
 
 export const novoProduto = async (data) => {
     try {
@@ -22,7 +23,7 @@ export const buscaProduto = async (data) => {
     try {
         const produtos = await produtosRepositories.buscaProduto({ ...data });
         if (produtos.length === 0) {
-            return { message: "Produto não Encontrado", response: 404};
+            return { message: "Produto não Encontrado", response: 404 };
         }
         return { response: 200, message: "Produto encontrado", payload: produtos };
     } catch (error) {
@@ -45,7 +46,7 @@ export const atualizaProduto = async (data) => {
         throw new Error(error)
     }
 }
-    
+
 export const verificaEstoqueProduto = async () => {
     try {
         const produtos = await produtosRepositories.verificaEstoqueProduto();
@@ -53,6 +54,19 @@ export const verificaEstoqueProduto = async () => {
     } catch (error) {
         throw new Error(error);
     }
+}
+
+export const vendeProduto = async (data, skuId) => {
+    let verificaOrdemDeVenda;
+    let ordemDeVenda;
+    do {
+        ordemDeVenda = batizaOrdemDeVenda();
+        verificaOrdemDeVenda = await produtosRepositories.verificaOrdemDeVenda(ordemDeVenda);
+    } while (verificaOrdemDeVenda.rowCount > 0);
+    const sla = await produtosRepositories.vendeProduto({ ...data, skuId, ordemDeVenda });
+    console.log(sla);
+    return { response: 200, message: "Produto colocado na lista de vendas"};
+    
 }
 
 cron.schedule('0 0 * * 0', async () => {

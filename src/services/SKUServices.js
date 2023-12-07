@@ -20,6 +20,9 @@ export const buscaSKU = async (data) => {
     
     try {
         const skus = await SKURepositories.buscaSKU({...data});
+        if (skus.length === 0) {
+            return { message: "SKU não Encontrado", response: 404 };
+        }
         return { response: 200, payload: skus };
     } catch (error) {
         throw new Error(error);

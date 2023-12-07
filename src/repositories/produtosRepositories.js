@@ -11,7 +11,7 @@ export const novoProduto = async ({ skuId, unidadeDeEstoqueId, quantidade }) => 
     }
 }
 
-export const buscaProduto = async ({ id, skuId, unidadeDeEstoqueId}) => {
+export const buscaProduto = async ({ id, skuId, unidadeDeEstoqueId }) => {
     try {
         let query = `SELECT produtos.id, "SKUs".sku_name AS "SKU", "SKUs".nome AS nome, "unidade_de_estoque".nome AS "unidade_de_estoque", produtos.quantidade  FROM produtos`;
         query += ` JOIN "SKUs" ON produtos.sku_id = "SKUs".id JOIN "unidade_de_estoque" ON produtos.unidade_de_estoque_id = "unidade_de_estoque".id`
@@ -34,7 +34,6 @@ export const buscaProduto = async ({ id, skuId, unidadeDeEstoqueId}) => {
             values.push(unidadeDeEstoqueId);
             query += ` ${values.length > 1 ? "AND" : ""} produtos.unidade_de_estoque_id = $${values.length}`;
         }
-        console.log(query)
         const result = await db.query(query, values);
         return result.rows;
 
@@ -48,7 +47,7 @@ export const atualizaProduto = async ({ quantidade, unidadeDeEstoqueId, skuId })
         return await db.query(`
             UPDATE produtos SET quantidade = $1 WHERE unidade_de_estoque_id = $2 AND sku_id = $3;
         `
-        , [quantidade, unidadeDeEstoqueId, skuId]);
+            , [quantidade, unidadeDeEstoqueId, skuId]);
     } catch (error) {
         throw new Error(error);
     }
@@ -56,8 +55,27 @@ export const atualizaProduto = async ({ quantidade, unidadeDeEstoqueId, skuId })
 
 export const verificaEstoqueProduto = async () => {
     try {
-        const produtos = await db.query('SELECT id, unidade_de_estoque_id FROM produtos WHERE quantidade < 20');
+        const produtos = await db.query(`SELECT id, unidade_de_estoque_id FROM produtos WHERE quantidade < 5`);
         return produtos.rows;
+    } catch (error) {
+        throw new Error(error);
+    }
+}
+
+
+export const vendeProduto = async ({ quantidadeVendida, nomeCliente, enderecoCliente, ordemDeVenda, skuId }) => {
+    try {
+        const query = await db.query(`INSERT INTO vendas (ordem_de_venda, sku_id, endereco_cliente, nome_cliente, quantidade) VALUES ($1, $2, $3, $4, $5)`, [ordemDeVenda, skuId, enderecoCliente, nomeCliente, quantidadeVendida]);
+        return query;
+    } catch (error) {
+        throw new Error(error);
+    }
+}
+
+export const verificaOrdemDeVenda = async (ordemDeVenda) => {
+    try {
+
+        return await db.query(`select * from vendas where ordem_de_venda = $1`, [ordemDeVenda]);
     } catch (error) {
         throw new Error(error);
     }
