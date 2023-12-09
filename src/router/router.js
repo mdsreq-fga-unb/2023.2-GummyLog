@@ -4,6 +4,7 @@ import unidadeDeArmazenamentoRouter from "./unidadeDeArmazenamentoRouter.js";
 import SKURouter from "./SKURouter.js";
 import healthRouter from "./healthRouter.js";
 import produtosRouter from "../router/produtosRouter.js";
+import authRouter from "./authRouter.js";
 
 const router = Router();
 
@@ -11,6 +12,7 @@ router.use(marcasRouter);
 router.use(unidadeDeArmazenamentoRouter);
 router.use(SKURouter);
 router.use(healthRouter);
-router.use(produtosRouter)
+router.use(produtosRouter);
+router.use(authRouter);
 
 export default router; 

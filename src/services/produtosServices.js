@@ -6,11 +6,15 @@ import { batizaOrdemDeVenda } from "../helpers/vendaHelper.js";
 
 export const novoProduto = async (data) => {
     try {
-        const existe = await SKURepositories.buscaSKU(data);
-
-        if (existe.rowCount === 0) {
+        const existeSku = await SKURepositories.buscaSKU({ skuId: data.skuId , });
+        if (existeSku.rowCount === 0) {
             return { response: 404, message: "SKU não encontrado" }
+        }   
+        const existeProduto = await buscaProduto({ ...data });
+        if (existeProduto.response === 200) {
+            return { response: 404, message: "Produto já cadastrado" };
         }
+        console.log(produto);
         await produtosRepositories.novoProduto({ ...data });
         return { response: 201, message: "Produto Registrado" };
 
