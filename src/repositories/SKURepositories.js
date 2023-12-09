@@ -41,7 +41,6 @@ export const buscaSKU = async ({ id, nome, marcaId, skuNome, dataInicio, dataFim
             values.push(dataInicio, dataFim);
             query += ` ${values.length > 2 ? "AND" : ""} "SKUs".ultimo_abastecimento BETWEEN $${values.length - 1} AND $${values.length}`;
         }
-        console.log(query);
         const result = await db.query(query, values);
         return result.rows;
 
