@@ -171,3 +171,17 @@ US06:
 * Desenvolver interface de usuário
 * Validar os dados inseridos
 * Funcionalidade de criar usuário na database
+
+## Reunião de feedback com o cliente - 07/12/2023
+
+### Feedback dos MVPs:
+[![Feedback dos MVPs - GummyLog](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DzRBgPqGNVcg)](https://www.youtube.com/watch?v=zRBgPqGNVcg)
+
+### Feedback do US02:
+[![Feedback do US02 - GummyLog](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fyoutu.be%2F9Nzsg6JcRTQ)](https://youtu.be/9Nzsg6JcRTQ)
+
+### Feedback do US03:
+[![Feedback do US03 - GummyLog](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fyoutu.be%2Fo4zKy90SLSI)](https://youtu.be/o4zKy90SLSI)
+
+### Feedback da estrutura do banco de dados:
+[![Feedback da estrutura do banco de dados - GummyLog](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D_ldw57LZ1Zw)](https://www.youtube.com/watch?v=_ldw57LZ1Zw)
