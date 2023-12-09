@@ -63,10 +63,31 @@ export const vendeProduto = async (data, skuId) => {
         ordemDeVenda = batizaOrdemDeVenda();
         verificaOrdemDeVenda = await produtosRepositories.verificaOrdemDeVenda(ordemDeVenda);
     } while (verificaOrdemDeVenda.rowCount > 0);
-    const sla = await produtosRepositories.vendeProduto({ ...data, skuId, ordemDeVenda });
-    console.log(sla);
+    await produtosRepositories.vendeProduto({ ...data, skuId, ordemDeVenda });
     return { response: 200, message: "Produto colocado na lista de vendas"};
     
+}
+
+export const buscaVenda = async (data) => {
+    try {
+        const vendas = await produtosRepositories.buscaVenda({ ...data });
+        if (vendas.length === 0) {
+            return { response: 404, message: "Venda não encontrada" };
+        }
+        return { response: 200, message: "Venda encontrada", payload: vendas};
+    } catch (error) {
+        throw new Error(error);
+    }
+}
+
+
+export const atualizaVenda = async (data) => {
+    const existeVenda = await produtosRepositories.buscaVenda(data);
+    if (existeVenda.length === 0) {
+        return { response: 404, message: "Venda não encontrada" }
+    }
+    await produtosRepositories.atualizaVenda({ novoStatus: data.novoStatus, ordemDeVenda: data.ordemDeVenda});
+    return { response: 200, message: "Venda atualizada"};
 }
 
 cron.schedule('0 0 * * 0', async () => {
