@@ -24,3 +24,16 @@ export const buscaUsuario = async (data) => {
         throw new Error(error);
     }
 }
+
+export const logaUsuario = async (data) => {
+    try {
+        const existeUsuario = await authRepositories.buscaUsuario(data);
+        if (existeUsuario.rowCount === 0) {
+            return { response: 404, message: "Usuario não encontrado"};
+        }
+        const login = await authRepositories.logaUsuario(data);
+        return { response: 200, message: "Login realizado", token: login};
+    } catch (error) {
+        throw new Error(error);
+    }
+}
