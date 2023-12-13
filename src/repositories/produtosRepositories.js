@@ -27,7 +27,7 @@ export const buscaProduto = async ({ id, skuId, unidadeDeEstoqueId }) => {
 
         if (skuId) {
             values.push(skuId);
-            query += ` ${values.length > 1 ? "AND" : ""} produtos.sku_id = $${values.length}`;
+            query += ` ${values.length > 1 ? "AND" : ""} sku_id = $${values.length}`;
         }
 
         if (unidadeDeEstoqueId) {
