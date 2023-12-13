@@ -35,3 +35,8 @@ export const FormTitle = styled.h1`
     color: white;
     font-family: 'Roboto'; 
 `
+export const FormSelect = styled.select`
+    border-radius: 10px;
+    border: 1px solid #8E2690;
+    
+`
