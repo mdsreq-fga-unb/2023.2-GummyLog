@@ -71,4 +71,4 @@ afterAll(async () => {
     await db.query(`TRUNCATE TABLE "SKUs" RESTART IDENTITY CASCADE;`);
     await db.query(`TRUNCATE TABLE unidade_de_estoque RESTART IDENTITY CASCADE;`);
     await db.query(`TRUNCATE TABLE marcas RESTART IDENTITY CASCADE;`);
-})
+});
