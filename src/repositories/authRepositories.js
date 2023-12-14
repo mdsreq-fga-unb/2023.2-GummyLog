@@ -47,3 +47,13 @@ export const logaUsuario = async ({ senha, email }) => {
         throw new Error(error);
     }
 }
+
+export const trocaSenha = async ({ novaSenha, email }) => {
+    try {
+        const saltRounds = 10;
+        const senhaEncriptada = await bcrypt.hash(novaSenha, saltRounds)
+        return await db.query(`UPDATE usuarios SET senha_hash = $1 WHERE email = $2`, [senhaEncriptada, email]);
+    } catch (error) {
+        throw new Error(error);
+    }
+}

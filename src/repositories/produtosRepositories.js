@@ -129,8 +129,29 @@ export const atualizaVenda = async ({ novoStatus, ordemDeVenda }) => {
 export const verificaOrdemDeVenda = async (ordemDeVenda) => {
     try {
 
-        return await db.query(`select * from vendas where ordem_de_venda = $1`, [ordemDeVenda]);
+        return await db.query(`SELECET * FROM vendas WHERE ordem_de_venda = $1`, [ordemDeVenda]);
     } catch (error) {
         throw new Error(error);
     }
 } 
+
+export const emailNotificacao = async ({email}) => {
+    try {
+        let verificaEmail = await db.query(`SELECT * FROM email_notificacao`);
+        if (verificaEmail.rowCount > 0) {
+            return await atualizaEmailNotificacao(email);
+        }
+        return await db.query(`INSERT INTO email_notificacao (email) VALUES ($1)`, [email])
+
+    } catch (error) {
+        throw new Error(error);
+    }
+}
+
+export const atualizaEmailNotificacao = async (email) => {
+    try {
+        return await db.query(`UPDATE email_notificacao set email = $1 WHERE id = 1`, [email]);
+    } catch (error) {
+        throw new Error(error);
+    }
+}

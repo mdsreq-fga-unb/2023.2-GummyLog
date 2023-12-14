@@ -90,12 +90,18 @@ export const atualizaVenda = async (data) => {
     return { response: 200, message: "Venda atualizada"};
 }
 
+export const emailNotificacao = async (data) => {
+    await produtosRepositories.emailNotificacao({ ...data });
+    return { response:200, message: "Email de notificação atualizado"};
+
+}
+
 cron.schedule('0 0 * * 0', async () => {
     const produtos = await verificaEstoqueProduto();
     produtos.forEach(async (produto) => {
         const mensagem = {
-            from: 'junior.amaral.2121@gmail.com',
-            to: 'gummylognotify@gmail.com',
+            from: 'gummylognotify@gmail.com',
+            to: email,
             subject: 'Notificação de Estoque Baixo',
             text: `O produto ${produto.id} está com estoque baixo na unidade de estoque: (${produto.unidade_de_estoque_id} ).`,
         };

@@ -15,5 +15,6 @@ produtoRouter.put("/atualiza-produto", authMiddleware, validateSchemaMiddleware(
 produtoRouter.post("/realiza-venda", authMiddleware, validateSchemaMiddleware(vendaSchema), produtosController.vendeProduto);
 produtoRouter.get("/vendas",  authMiddleware, produtosController.buscaVenda);
 produtoRouter.put("/atualiza-venda", authMiddleware, validateSchemaMiddleware(atualizaVendaSchema), produtosController.atualizaVenda);
+produtoRouter.put("/email-notificacao", produtosController.emailNotificacao);
 
 export default produtoRouter;
