@@ -4,6 +4,7 @@ import TaskTableProdutos from "./components/tabelaProdutos/TaskTableProdutos"
 import UserRegister from "./components/userRegister/UserRegisterForm"
 import UserLogin from "./components/userLogin/UserLoginForm"
 import NewSKU from "./pages/NewSKU";
+import Vendas from "./pages/Vendas";
 import React from 'react'
 
 const Router = () => {
@@ -15,6 +16,7 @@ const Router = () => {
             <Route path="/registeruser" element={<UserRegister/>}/>
             <Route path="/loginuser" element={<UserLogin/>}/>
             <Route path="/registrarsku" element={<NewSKU/>}/>
+            <Route path="/vendas" element={<Vendas/>}/>
         </Routes>
     </BrowserRouter>
   )
