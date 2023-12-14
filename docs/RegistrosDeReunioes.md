@@ -185,3 +185,110 @@ US06:
 
 ### Feedback da estrutura do banco de dados:
 [![Feedback da estrutura do banco de dados - GummyLog](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D_ldw57LZ1Zw)](https://www.youtube.com/watch?v=_ldw57LZ1Zw)
+
+## Sprint 4 Review
+
+### Sprint backlog items:
+
+US01:
+* Desenvolver interface de usuário
+* Funcionalidade de enviar dados para database
+* Validar os dados antes do envio
+* Delimitar os campos obrigatórios
+
+US10:
+* Desenvolver interface de usuário
+* Funcionalidade de atualização de dados
+* Validar os dados inseridos	
+* Funcionalidade de confirmação manual
+
+US03:
+* Definir que constitui um baixo estoque
+	
+US11:
+* Desenvolver interface de usuário
+* Funcionalidade de enviar dados para database
+* Validar os dados antes do envio
+* Delimitar os campos obrigatórios
+* Funcionalidade de atualização de dados de database
+	
+US14:
+* Desenvolver interface de usuário
+* Funcionalidade de atualização de email
+* Validação do email inserido
+* Funcionalidade de enviar e-mail de teste
+
+US04:	
+* Funcionalidade de captar eventos de outros processos
+* Funcionalidade de atualização automática dos dados da database
+	
+US05:
+* Funcionalidade de enviar e mail de recuperação
+	
+US06:
+* Desenvolver interface de usuário
+* Validar os dados inseridos
+* Funcionalidade de criar usuário na database
+
+### SBI's aprovados:
+
+US1:
+* Validar os dados antes do envio
+* Delimitar os campos obrigatórios
+* Desenvolver interface de usuário
+
+US06:
+* Desenvolver interface de usuário
+* Validar os dados inseridos
+* Funcionalidade de criar usuário na database
+
+US03:
+* Definir que constitui um baixo estoque
+
+US11:
+* Desenvolver interface de usuário
+* Validar os dados antes do envio
+* Delimitar os campos obrigatórios
+
+US14:
+* Funcionalidade de atualização de email
+
+US05:
+* Funcionalidade de enviar e mail de recuperação
+
+US10:
+* Funcionalidade de atualização de dados
+
+### Mudanças no ambiente:
+
+Não houve mudança no ambiente.
+
+### O que fazer:
+
+* Apresentar produto completo ao cliente para receber feedback.
+
+* Aplicar feedback recebido ao produto.
+
+* Realizar testes em um ambiente específico para verificar as funcionalidades do produto.
+
+## Sprint 4 retrospective:
+
+### O que deu certo:
+
+* Desta vez se pôde ser possível realizar reuniões com o cliente para adquirir feedback.
+
+* Houve um aumento na disponibilidade dos membros da equipe.
+
+* Boa aplicação contínua de pair programming e clean code.
+
+### O que não deu certo:
+
+* O trabalho foi concluído muito perto da data de entrega.
+
+* Preparação para a apresentação não foi muito extensa.
+
+* Falha ao apresentar o produto completo ao cliente.
+
+### Planos de ação e metas:
+
+* Preparar explicações sobre as diferentes funcionalidades do aplicativo com antecedência para que possam ser traduzidas e apresentadas ao cliente.
