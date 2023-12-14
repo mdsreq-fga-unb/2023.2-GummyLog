@@ -74,3 +74,14 @@ export const atualizaVenda = async (req, res) => {
         throw new Error(error);
     }
 }
+
+export const emailNotificacao = async (req, res) => {
+    const data = req.body;
+    
+    try {
+        const ans = await produtosServices.emailNotificacao(data);
+        return ans = res.status(ans.response).send(ans.message);
+    } catch (error) {
+        throw new Error(error);
+    }
+}
