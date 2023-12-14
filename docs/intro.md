@@ -102,6 +102,9 @@ As sprints são planejadas para durar duas semanas, entretando, para adequar ao 
 ### Sprint 3 - Back
 [Apresentação - Back](https://www.youtube.com/watch?v=wEt0R5GsOdY)
 
+### Sprint 4 - Front
+[Apresentação - Front](https://www.youtube.com/watch?v=wEt0R5GsOdY)
+
 ## Referências bibliográficas
 
 - Lean Inception: Como alinhar pessoas e construir o produto certo, Paulo Caroli
