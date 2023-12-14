@@ -16,3 +16,5 @@ const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => {
     console.log(`server runing on PORT ${PORT}`);
 });
+
+export default server;
