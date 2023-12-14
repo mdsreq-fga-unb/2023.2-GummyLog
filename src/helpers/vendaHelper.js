@@ -1,4 +1,8 @@
 export const batizaOrdemDeVenda = () => {
-    const ordemDeVenda = parseInt(Math.random()*100000000000);
-    return ordemDeVenda
+    let ordemDeVenda;
+
+    do{
+        ordemDeVenda = parseInt(Math.random()*10000000000).toString();
+    } while (ordemDeVenda.length < 10);
+    return ordemDeVenda;
 }

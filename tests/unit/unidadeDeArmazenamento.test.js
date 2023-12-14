@@ -26,7 +26,6 @@ describe("Suite de testes de unidade de armazenamento", () => {
 
     it("Não pode adicionar uma unidade de armazenamento já existente", async () => {
         const dados = await unidadeDeArmazenamentoFactory.novaUnidadeDeArmazenamento();
-        console.log(dados);
         const verificacao = await unidadeDeArmazenamentoService.novaUnidadeDeArmazenamento({
             nome: dados.nome,
             endereco: dados.endereco

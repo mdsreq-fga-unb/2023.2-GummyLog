@@ -6,11 +6,8 @@ export const novaUnidadeDeArmazenamento = async () => {
         nome: faker.person.firstName(),
         endereco: faker.location.streetAddress()
     };
-    console.log(dados);
 
     await db.query(`INSERT INTO unidade_de_estoque (nome, endereco) VALUES ($1, $2)`,
         [dados.nome, dados.endereco]);
     return dados;
 };
-
-console.log(novaUnidadeDeArmazenamento());

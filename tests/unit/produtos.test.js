@@ -46,7 +46,6 @@ describe("Suite de testes de produtos", () => {
             unidadeDeEstoqueId: 1,
             quantidade: 14
         }
-
         const resposta = await produtosService.novoProduto(dados);
 
         expect(resposta.response).toBe(404);

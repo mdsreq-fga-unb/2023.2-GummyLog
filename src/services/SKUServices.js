@@ -10,7 +10,7 @@ export const novoSKU = async (data) => {
         const skuData = { ...data, skuNome };
         const existeSku = await SKURepositories.buscaSKU({ ...data });
         if (existeSku.length > 0) {
-            return { response: 404, message: "SKU já cadastrado"};
+            return { response: 409, message: "SKU já cadastrado"};
         }
         await SKURepositories.novoSKU(skuData);
         return { response: 201, message: "SKU criado com sucesso" };
